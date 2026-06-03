@@ -1,0 +1,22 @@
+{
+  "item.solarpancakestweaks.iced_crystal": "Iced Crystal",
+  "item.solarpancakestweaks.black_can": "Smirnoff Ice Black",
+  "item.solarpancakestweaks.crushed_iced_crystal": "Crushed Iced Crystal",
+  "item.solarpancakestweaks.empty_can": "Empty Can",
+  "item.solarpancakestweaks.green_apple": "Green Apple",
+  "item.solarpancakestweaks.green_apple_sliced": "Green Apple Sliced",
+  "item.solarpancakestweaks.original_can": "Smirnoff Ice Original",
+  "item.solarpancakestweaks.raspberry_can": "Smirnoff Ice Raspberry",
+  "item.solarpancakestweaks.green_apple_can": "Smirnoff Ice Green Apple",
+
+  "block.solarpancakestweaks.iced_crystal_block": "Iced Crystal Block",
+  "block.solarpancakestweaks.iced_crystal_cluster": "Iced Crystal Cluster",
+  "block.solarpancakestweaks.small_iced_crystal_bud": "Small Iced Crystal Bud",
+  "block.solarpancakestweaks.medium_iced_crystal_bud": "Medium Iced Crystal Bud",
+  "block.solarpancakestweaks.large_iced_crystal_bud": "Large Iced Crystal Bud",
+  "block.solarpancakestweaks.budding_iced_crystal": "Budding Iced Crystal",
+
+
+
+  "creativetab.solarpancakestweaks.solarpancakes_tweaks": "Solarpancakes' Tweaks"
+}

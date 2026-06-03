@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "iced_crystal",
+  "key": {
+    "A": "solarpancakestweaks:iced_crystal"
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "id": "solarpancakestweaks:iced_crystal_block"
+  }
+}

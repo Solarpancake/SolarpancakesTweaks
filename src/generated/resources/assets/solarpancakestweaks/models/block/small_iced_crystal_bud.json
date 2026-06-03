@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "solarpancakestweaks:block/small_iced_crystal_bud"
+  }
+}

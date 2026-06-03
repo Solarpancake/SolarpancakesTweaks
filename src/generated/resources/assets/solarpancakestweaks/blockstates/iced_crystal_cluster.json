@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "solarpancakestweaks:block/iced_crystal_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "solarpancakestweaks:block/iced_crystal_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "solarpancakestweaks:block/iced_crystal_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "solarpancakestweaks:block/iced_crystal_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "solarpancakestweaks:block/iced_crystal_cluster"
+    },
+    "facing=west": {
+      "model": "solarpancakestweaks:block/iced_crystal_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

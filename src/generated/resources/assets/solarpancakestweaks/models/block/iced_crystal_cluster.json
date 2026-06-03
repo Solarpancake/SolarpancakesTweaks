@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "solarpancakestweaks:block/iced_crystal_cluster"
+  }
+}
