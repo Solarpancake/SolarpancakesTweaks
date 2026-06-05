@@ -32,6 +32,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.ICED_CRYSTAL_CLUSTER.get(),
                 createMultipleDrops(ModBlocks.ICED_CRYSTAL_CLUSTER.get(), ModItems.ICED_CRYSTAL.get(), 1, 3));
 
+        add(ModBlocks.FLOWERING_LEMON_TREE_LEAVES.get(), noDrop());
 
         add(ModBlocks.BUDDING_ICED_CRYSTAL.get(), noDrop());
 

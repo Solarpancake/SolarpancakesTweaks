@@ -4,10 +4,27 @@
   "item.solarpancakestweaks.crushed_iced_crystal": "Crushed Iced Crystal",
   "item.solarpancakestweaks.empty_can": "Empty Can",
   "item.solarpancakestweaks.green_apple": "Green Apple",
+  "item.solarpancakestweaks.lemon": "Lemon",
+  "item.solarpancakestweaks.raspberry": "Raspberry",
   "item.solarpancakestweaks.green_apple_sliced": "Green Apple Sliced",
   "item.solarpancakestweaks.original_can": "Smirnoff Ice Original",
   "item.solarpancakestweaks.raspberry_can": "Smirnoff Ice Raspberry",
   "item.solarpancakestweaks.green_apple_can": "Smirnoff Ice Green Apple",
+  "item.solarpancakestweaks.iced_crystal_rod": "Iced Crystal Rod",
+  "item.solarpancakestweaks.ice_detector": "§bBudding Crystal Detector",
+
+  "item.solarpancakestweaks.iced_crystal_sword": "§bIced Crystal Sword",
+  "item.solarpancakestweaks.iced_crystal_pickaxe": "§bIced Crystal Pickaxe",
+  "item.solarpancakestweaks.iced_crystal_shovel": "§bIced Crystal Shovel",
+  "item.solarpancakestweaks.iced_crystal_axe": "§bIced Crystal Axe",
+  "item.solarpancakestweaks.iced_crystal_hoe": "§bIced Crystal Hoe",
+  "item.solarpancakestweaks.iced_crystal_spear": "§bIced Crystal Spear",
+
+  "item.solarpancakestweaks.iced_crystal_helmet": "§bIced Crystal Helmet",
+  "item.solarpancakestweaks.iced_crystal_chestplate": "§bIced Crystal Chestplate",
+  "item.solarpancakestweaks.iced_crystal_leggings": "§bIced Crystal Leggings",
+  "item.solarpancakestweaks.iced_crystal_boots": "§bIced Crystal Boots",
+
 
   "block.solarpancakestweaks.iced_crystal_block": "Iced Crystal Block",
   "block.solarpancakestweaks.iced_crystal_cluster": "Iced Crystal Cluster",
@@ -15,8 +32,16 @@
   "block.solarpancakestweaks.medium_iced_crystal_bud": "Medium Iced Crystal Bud",
   "block.solarpancakestweaks.large_iced_crystal_bud": "Large Iced Crystal Bud",
   "block.solarpancakestweaks.budding_iced_crystal": "Budding Iced Crystal",
+  "block.solarpancakestweaks.flowering_lemon_tree_leaves": "Flowering Lemon Tree Leaves",
 
 
+  "item.solarpancakestweaks.ice_detector.no_valuables": "No Budding Crystal Found",
+
+
+  "tooltip.ice_detector.tooltips.0": "§7Right-click any block to scan",
+  "tooltip.ice_detector.tooltips.1": "§7a 3×3 chunk radius for",
+  "tooltip.ice_detector.tooltips.2": "§7Budding Iced Crystals.",
+  "tooltip.ice_detector.tooltips.3": "§cConsumes 1 durability per use.",
 
   "creativetab.solarpancakestweaks.solarpancakes_tweaks": "Solarpancakes' Tweaks"
 }

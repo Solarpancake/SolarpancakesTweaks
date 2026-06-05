@@ -2,11 +2,10 @@ package de.solarpancake.tweaks.block;
 
 import de.solarpancake.tweaks.Solarpancakestweaks;
 
+import de.solarpancake.tweaks.block.custom.BuddingIcedCrystalBlock;
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.AmethystClusterBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
@@ -25,9 +24,17 @@ public class ModBlocks {
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    public static final DeferredBlock<Block> FLOWERING_LEMON_TREE_LEAVES = registerBlock("flowering_lemon_tree_leaves",
+            properties -> new Block(properties.strength(4f)));
+
+
+
+
     public static final DeferredBlock<Block> BUDDING_ICED_CRYSTAL = registerBlock("budding_iced_crystal",
-            properties -> new Block(properties.strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+            properties -> new BuddingIcedCrystalBlock(properties
+                    .strength(1.5f)
+                    .sound(SoundType.AMETHYST)
+                    .randomTicks()));
 
 
     public static final DeferredBlock<Block> ICED_CRYSTAL_CLUSTER = registerBlock("iced_crystal_cluster",
@@ -61,6 +68,10 @@ public class ModBlocks {
                     .noOcclusion()
                     .randomTicks()
                     .pushReaction(PushReaction.DESTROY)));
+
+
+
+
 
 
 

@@ -1,10 +1,7 @@
 package de.solarpancake.tweaks;
 
 
-import de.solarpancake.tweaks.datagen.ModBlockLootTableProvider;
-import de.solarpancake.tweaks.datagen.ModBlockTagsProvider;
-import de.solarpancake.tweaks.datagen.ModModelProvider;
-import de.solarpancake.tweaks.datagen.ModRecipeProvider;
+import de.solarpancake.tweaks.datagen.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -31,6 +28,12 @@ public class SolarpancakesTweaksDataGen {
         generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+        generator.addProvider(true, new ModItemTagsProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
+
+
+
+
     }
 
 }
