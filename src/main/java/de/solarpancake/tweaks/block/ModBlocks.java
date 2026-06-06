@@ -28,7 +28,8 @@ public class ModBlocks {
             properties -> new Block(properties.strength(4f)));
 
 
-
+    public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS = registerBlock("iced_crystal_bricks",
+            properties -> new Block(properties.strength(4f)));
 
     public static final DeferredBlock<Block> BUDDING_ICED_CRYSTAL = registerBlock("budding_iced_crystal",
             properties -> new BuddingIcedCrystalBlock(properties
@@ -70,7 +71,13 @@ public class ModBlocks {
                     .pushReaction(PushReaction.DESTROY)));
 
 
+    public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS_STAIRS = registerBlock("iced_crystal_bricks_stairs",
+            properties -> new StairBlock(ModBlocks.ICED_CRYSTAL_BRICKS.get().defaultBlockState(), properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS_SLAB = registerBlock("iced_crystal_bricks_slab",
+            properties -> new SlabBlock(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
 
 

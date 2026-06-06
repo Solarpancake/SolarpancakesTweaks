@@ -54,6 +54,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ICED_CRYSTAL_CLUSTER);
                         output.accept(ModBlocks.BUDDING_ICED_CRYSTAL);
                         output.accept(ModBlocks.FLOWERING_LEMON_TREE_LEAVES);
+                        output.accept(ModBlocks.ICED_CRYSTAL_BRICKS);
+                        output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS);
+                        output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB);
 
                         output.accept(ModItems.ICE_DETECTOR);
 

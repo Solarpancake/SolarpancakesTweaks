@@ -59,6 +59,10 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createAmethystCluster(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get());
         blockModels.createAmethystCluster(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get());
 
+        blockModels.family(ModBlocks.ICED_CRYSTAL_BRICKS.get())
+                .stairs(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get())
+                .slab(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get());
+
 
     }
 }

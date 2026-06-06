@@ -22,7 +22,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.SMALL_ICED_CRYSTAL_BUD.get())
                 .add(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get())
                 .add(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get())
-                .add(ModBlocks.ICED_CRYSTAL_CLUSTER.get());
+                .add(ModBlocks.ICED_CRYSTAL_CLUSTER.get())
+                .add(ModBlocks.ICED_CRYSTAL_BRICKS.get())
+                .add(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get())
+                .add(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get());
 
 
         tag(BlockTags.NEEDS_IRON_TOOL)

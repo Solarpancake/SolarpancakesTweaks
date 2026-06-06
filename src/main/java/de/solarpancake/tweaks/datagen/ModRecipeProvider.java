@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
@@ -43,6 +44,21 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.ICED_CRYSTAL.get()), has(ModItems.ICED_CRYSTAL))
                 .group("iced_crystal")
                 .save(output, "solarpancakestweaks:iced_crystal_from_iced_crystal_block");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BRICKS.get())
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.ICED_CRYSTAL.get())
+                .unlockedBy(getHasName(ModItems.ICED_CRYSTAL.get()), has(ModItems.ICED_CRYSTAL))
+                .group("iced_crystal")
+                .save(output, "solarpancakestweaks:iced_crystal_bricks_from_iced_crystal");
+
+        stairBuilder(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get(), Ingredient.of(ModBlocks.ICED_CRYSTAL_BRICKS))
+                .unlockedBy(getHasName(ModBlocks.ICED_CRYSTAL_BRICKS.get()), has(ModBlocks.ICED_CRYSTAL_BRICKS))
+                        .group("iced_crystal")
+                        .save(output);
+
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get(), ModBlocks.ICED_CRYSTAL_BRICKS.get());
 
         shaped(RecipeCategory.MISC, ModItems.ICE_DETECTOR.get())
                 .pattern("  B")
