@@ -17,11 +17,14 @@ forming a full Iced Crystal Cluster. Harvest with Silk Touch to collect the
 clusters, or let them grow wild as decoration.
 
 ### Tools & Armor
-A new tier for Tools and Armor based on the Iced Crystal that matches the Netherite tier from Minecraft.
-This includes basic tools and armor as well as the new spear item and a custom wand detecting nearby Budding Iced Crystal blocks.
+A new tier of tools and armor based on Iced Crystal, on par with Netherite.
+Includes basic tools and armor, a new spear, and a custom wand that detects
+nearby Budding Iced Crystal blocks.
 
 ### Food & Consumables
-In addition to the Iced Crystal based content, this mod also adds new food items and consumables including lemons, raspberries, green apples and a variety of Smirnoff Ice flavours. Disclaimer: the custom bushes and trees are not implemented yet.
+In addition to the Iced Crystal-based content, this mod adds new food items and
+consumables including lemons, raspberries, green apples, and a variety of 
+"Smirnoff Ice" drinks. Note: custom bushes and trees are not yet implemented.
 
 ## Reporting bugs
 If something breaks (and it will), feel free to point it out. All feedback is
