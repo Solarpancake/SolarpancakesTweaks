@@ -8,6 +8,7 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.data.PackOutput;
 
 public class ModModelProvider extends ModelProvider {
@@ -62,6 +63,11 @@ public class ModModelProvider extends ModelProvider {
         blockModels.family(ModBlocks.ICED_CRYSTAL_BRICKS.get())
                 .stairs(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get())
                 .slab(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get());
+
+        blockModels.createRotatedPillarWithHorizontalVariant(ModBlocks.ICED_CRYSTAL_PILLAR.get(),
+                TexturedModel.COLUMN,
+                TexturedModel.COLUMN_HORIZONTAL
+        );
 
 
     }

@@ -79,6 +79,12 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    public static final DeferredBlock<Block> ICED_CRYSTAL_PILLAR = registerBlock("iced_crystal_pillar",
+            properties -> new RotatedPillarBlock(properties
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)));
+
 
 
 
