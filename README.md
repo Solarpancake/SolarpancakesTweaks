@@ -1,7 +1,7 @@
 Solarpancakes' Tweaks
 =====================
 
-A small passion project for Minecraft NeoForge 1.21.x (Loader 26.1.2) that adds
+A small passion project for Minecraft NeoForge 26.x (Loader 26.1.2) that adds
 new tools, armor, consumables, and decorative blocks.
 
 Currently in Alpha (v0.1.1) — expect rough edges and the occasional unintentional
