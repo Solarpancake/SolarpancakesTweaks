@@ -26,7 +26,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.ICED_CRYSTAL_BRICKS.get())
                 .add(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get())
                 .add(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get())
-                .add(ModBlocks.ICED_CRYSTAL_PILLAR.get());
+                .add(ModBlocks.ICED_CRYSTAL_PILLAR.get())
+                .add(ModBlocks.ICED_CRYSTAL_LAMP.get());
 
 
         tag(BlockTags.NEEDS_IRON_TOOL)

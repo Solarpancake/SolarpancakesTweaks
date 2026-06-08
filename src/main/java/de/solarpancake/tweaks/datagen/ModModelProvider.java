@@ -2,12 +2,15 @@ package de.solarpancake.tweaks.datagen;
 
 import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.block.ModBlocks;
+import de.solarpancake.tweaks.block.custom.IcedCrystalLampBlock;
 import de.solarpancake.tweaks.item.ModArmorMaterials;
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
+import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.data.PackOutput;
 
@@ -69,6 +72,11 @@ public class ModModelProvider extends ModelProvider {
                 TexturedModel.COLUMN,
                 TexturedModel.COLUMN_HORIZONTAL
         );
+
+        blockModels.blockStateOutput.accept(
+                MultiVariantGenerator.dispatch(ModBlocks.ICED_CRYSTAL_LAMP.get()).with(BlockModelGenerators.createBooleanModelDispatch(IcedCrystalLampBlock.CLICKED,
+                        BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.ICED_CRYSTAL_LAMP.get(), "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube)),
+                        BlockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.ICED_CRYSTAL_LAMP.get(), blockModels.modelOutput)))));
 
 
     }

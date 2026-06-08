@@ -3,6 +3,7 @@ package de.solarpancake.tweaks.block;
 import de.solarpancake.tweaks.Solarpancakestweaks;
 
 import de.solarpancake.tweaks.block.custom.BuddingIcedCrystalBlock;
+import de.solarpancake.tweaks.block.custom.IcedCrystalLampBlock;
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
@@ -84,6 +85,10 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> ICED_CRYSTAL_LAMP = registerBlock("iced_crystal_lamp",
+            properties -> new IcedCrystalLampBlock(properties.strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(IcedCrystalLampBlock.CLICKED) ? 15 : 0)));
 
 
 

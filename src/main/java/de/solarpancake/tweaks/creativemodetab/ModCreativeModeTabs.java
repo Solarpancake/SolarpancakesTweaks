@@ -59,6 +59,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS);
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB);
                         output.accept(ModBlocks.ICED_CRYSTAL_PILLAR);
+                        output.accept(ModBlocks.ICED_CRYSTAL_LAMP);
 
                         output.accept(ModItems.ICE_DETECTOR);
 

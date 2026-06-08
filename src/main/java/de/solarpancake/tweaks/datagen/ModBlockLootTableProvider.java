@@ -48,6 +48,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ICED_CRYSTAL_BRICKS.get());
         dropSelf(ModBlocks.ICED_CRYSTAL_PILLAR.get());
         dropSelf(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get());
+        dropSelf(ModBlocks.ICED_CRYSTAL_LAMP.get());
 
         add(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get(), this::createSlabItemTable);
 
