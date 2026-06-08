@@ -32,6 +32,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICED_CRYSTAL_CHESTPLATE);
                         output.accept(ModItems.ICED_CRYSTAL_LEGGINGS);
                         output.accept(ModItems.ICED_CRYSTAL_BOOTS);
+                        output.accept(ModItems.ICED_CRYSTAL_HORSE_ARMOR);
 
 
                         output.accept(ModItems.CRUSHED_ICED_CRYSTAL);

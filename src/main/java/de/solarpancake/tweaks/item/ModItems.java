@@ -82,7 +82,8 @@ public class ModItems {
     public static final DeferredItem<Item> ICED_CRYSTAL_BOOTS = ITEMS.registerItem("iced_crystal_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ICED_CRYSTAL_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
-
+    public static final DeferredItem<Item> ICED_CRYSTAL_HORSE_ARMOR = ITEMS.registerItem("iced_crystal_horse_armor",
+            properties -> new Item(properties.horseArmor(ModArmorMaterials.ICED_CRYSTAL_ARMOR_MATERIAL)));
 
 
     public static void register(IEventBus eventBus) {
