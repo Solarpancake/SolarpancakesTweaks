@@ -30,7 +30,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.ICED_CRYSTAL_LAMP.get())
                 .add(ModBlocks.CAT_TREE_1.get())
                 .add(ModBlocks.CAT_TREE_2.get())
-                .add(ModBlocks.CAT_TREE_3.get());
+                .add(ModBlocks.CAT_TREE_3.get())
+                .add(ModBlocks.CAT_TREE_4.get());
 
 
         tag(BlockTags.NEEDS_IRON_TOOL)

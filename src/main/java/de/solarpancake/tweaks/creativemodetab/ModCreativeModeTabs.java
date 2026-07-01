@@ -64,6 +64,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CAT_TREE_1);
                         output.accept(ModBlocks.CAT_TREE_2);
                         output.accept(ModBlocks.CAT_TREE_3);
+                        output.accept(ModBlocks.CAT_TREE_4);
 
                         output.accept(ModItems.ICE_DETECTOR);
 
