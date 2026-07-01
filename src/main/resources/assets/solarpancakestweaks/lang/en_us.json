@@ -26,6 +26,8 @@
   "item.solarpancakestweaks.iced_crystal_boots": "§bIced Crystal Boots",
   "item.solarpancakestweaks.iced_crystal_horse_armor": "§bIced Crystal Horse Armor",
 
+  "item.solarpancakestweaks.iced_crystal_bow": "§bIced Crystal Bow",
+
 
   "block.solarpancakestweaks.iced_crystal_block": "Iced Crystal Block",
   "block.solarpancakestweaks.iced_crystal_cluster": "Iced Crystal Cluster",
@@ -39,6 +41,7 @@
   "block.solarpancakestweaks.iced_crystal_bricks_stairs": "Iced Crystal Bricks Stairs",
   "block.solarpancakestweaks.iced_crystal_bricks_slab": "Iced Crystal Bricks Slab",
   "block.solarpancakestweaks.iced_crystal_lamp": "Iced Crystal Lamp",
+  "block.solarpancakestweaks.cat_tree_1": "Cat Tree Base",
 
 
   "item.solarpancakestweaks.ice_detector.no_valuables": "No Budding Crystal Found",

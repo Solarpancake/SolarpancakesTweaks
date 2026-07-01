@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICED_CRYSTAL_LEGGINGS);
                         output.accept(ModItems.ICED_CRYSTAL_BOOTS);
                         output.accept(ModItems.ICED_CRYSTAL_HORSE_ARMOR);
+                        output.accept(ModItems.ICED_CRYSTAL_BOW);
 
 
                         output.accept(ModItems.CRUSHED_ICED_CRYSTAL);
@@ -60,6 +61,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB);
                         output.accept(ModBlocks.ICED_CRYSTAL_PILLAR);
                         output.accept(ModBlocks.ICED_CRYSTAL_LAMP);
+                        output.accept(ModBlocks.CAT_TREE_1);
 
                         output.accept(ModItems.ICE_DETECTOR);
 

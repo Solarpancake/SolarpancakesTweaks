@@ -52,7 +52,8 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateSpear(ModItems.ICED_CRYSTAL_SPEAR.get());
 
-
+        itemModels.createFlatItemModel(ModItems.ICED_CRYSTAL_BOW.get(), ModelTemplates.BOW);
+        itemModels.generateBow(ModItems.ICED_CRYSTAL_BOW.get());
 
 
         /* BLOCKS */
@@ -78,6 +79,6 @@ public class ModModelProvider extends ModelProvider {
                         BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.ICED_CRYSTAL_LAMP.get(), "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube)),
                         BlockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.ICED_CRYSTAL_LAMP.get(), blockModels.modelOutput)))));
 
-
+        blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_1.get());
     }
 }

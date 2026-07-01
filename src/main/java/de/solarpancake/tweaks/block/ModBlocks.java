@@ -3,6 +3,7 @@ package de.solarpancake.tweaks.block;
 import de.solarpancake.tweaks.Solarpancakestweaks;
 
 import de.solarpancake.tweaks.block.custom.BuddingIcedCrystalBlock;
+import de.solarpancake.tweaks.block.custom.CatTree1;
 import de.solarpancake.tweaks.block.custom.IcedCrystalLampBlock;
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -90,7 +91,9 @@ public class ModBlocks {
             properties -> new IcedCrystalLampBlock(properties.strength(2f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(IcedCrystalLampBlock.CLICKED) ? 15 : 0)));
 
-
+    public static final DeferredBlock<Block> CAT_TREE_1 = registerBlock("cat_tree_1",
+            properties -> new CatTree1(properties.strength(2f)
+                    .requiresCorrectToolForDrops()));
 
 
 

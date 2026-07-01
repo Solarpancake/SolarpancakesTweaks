@@ -37,5 +37,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.CHEST_ARMOR).add(ModItems.ICED_CRYSTAL_CHESTPLATE.get());
         tag(ItemTags.LEG_ARMOR).add(ModItems.ICED_CRYSTAL_LEGGINGS.get());
         tag(ItemTags.FOOT_ARMOR).add(ModItems.ICED_CRYSTAL_BOOTS.get());
+
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.ICED_CRYSTAL_BOW.get());
     }
 }
