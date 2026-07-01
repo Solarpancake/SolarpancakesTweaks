@@ -80,5 +80,7 @@ public class ModModelProvider extends ModelProvider {
                         BlockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.ICED_CRYSTAL_LAMP.get(), blockModels.modelOutput)))));
 
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_1.get());
+        blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_2.get());
+        blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_3.get());
     }
 }
