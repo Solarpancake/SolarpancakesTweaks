@@ -101,6 +101,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CAT_TREE_4 = registerBlock("cat_tree_4",
             properties -> new CatTree4(properties.strength(2f)
                     .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> CAT_TREE_5 = registerBlock("cat_tree_5",
+            properties -> new CatTree4(properties.strength(2f)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> CAT_TREE_6 = registerBlock("cat_tree_6",
+            properties -> new CatTree4(properties.strength(2f)
+                    .requiresCorrectToolForDrops()));
 
 
 

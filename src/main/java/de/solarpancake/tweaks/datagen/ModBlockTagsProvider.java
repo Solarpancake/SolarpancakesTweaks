@@ -31,7 +31,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.CAT_TREE_1.get())
                 .add(ModBlocks.CAT_TREE_2.get())
                 .add(ModBlocks.CAT_TREE_3.get())
-                .add(ModBlocks.CAT_TREE_4.get());
+                .add(ModBlocks.CAT_TREE_4.get())
+                .add(ModBlocks.CAT_TREE_5.get())
+                .add(ModBlocks.CAT_TREE_6.get());
 
 
         tag(BlockTags.NEEDS_IRON_TOOL)

@@ -83,5 +83,7 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_2.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_3.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_4.get());
+        blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_5.get());
+        blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_6.get());
     }
 }
