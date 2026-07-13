@@ -1,10 +1,10 @@
 Solarpancakes' Tweaks
 =====================
 
-A small passion project for Minecraft NeoForge 26.x (Loader 26.1.2) that adds
-new tools, armor, consumables, and decorative blocks.
+A small passion project for Minecraft NeoForge 26.x (Loader 26.2) that adds
+new tools, armor, consumables, crops, and decorative blocks.
 
-Currently in Alpha (v0.1.1) — expect rough edges and the occasional unintentional
+Currently in Alpha (v0.1.2) — expect rough edges and the occasional unintentional
 "feature." This mod is as much about learning NeoForge and Java as it is about
 the content itself, so things are always evolving.
 
@@ -24,7 +24,12 @@ nearby Budding Iced Crystal blocks.
 ### Food & Consumables
 In addition to the Iced Crystal-based content, this mod adds new food items and
 consumables including lemons, raspberries, green apples, and a variety of 
-"Smirnoff Ice" drinks. Note: custom bushes and trees are not yet implemented.
+"Smirnoff Ice" drinks. Note: custom trees are not yet implemented.
+
+### Cat Tree
+Made from Cardboard, this mod adds new modular building blocks used to create a custom
+cat tree. Currently there is no interaction with these blocks, but dynamic placement behaviour
+and interaction with cats will be added alongside more modules.
 
 ## Reporting bugs
 If something breaks (and it will), feel free to point it out. All feedback is
