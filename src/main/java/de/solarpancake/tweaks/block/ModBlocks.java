@@ -4,6 +4,8 @@ import de.solarpancake.tweaks.Solarpancakestweaks;
 
 import de.solarpancake.tweaks.block.custom.*;
 import de.solarpancake.tweaks.item.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -108,9 +110,15 @@ public class ModBlocks {
             properties -> new CatTree4(properties.strength(2f)
                     .requiresCorrectToolForDrops()));
 
+    public static final  DeferredBlock<Block> RASPBERRY_BUSH = BLOCKS.registerBlock("raspberry_bush",
+            properties -> new RaspberryBushBlock(properties.randomTicks().sound(SoundType.SWEET_BERRY_BUSH)
+                    .noCollision().pushReaction(PushReaction.DESTROY)));
 
 
 
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function){
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn);

@@ -17,41 +17,42 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+
+        /*  Pickaxe Mineable  */
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.ICED_CRYSTAL_BLOCK.get())
-                .add(ModBlocks.SMALL_ICED_CRYSTAL_BUD.get())
-                .add(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get())
-                .add(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get())
-                .add(ModBlocks.ICED_CRYSTAL_CLUSTER.get())
-                .add(ModBlocks.ICED_CRYSTAL_BRICKS.get())
-                .add(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get())
-                .add(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get())
-                .add(ModBlocks.ICED_CRYSTAL_PILLAR.get())
-                .add(ModBlocks.ICED_CRYSTAL_LAMP.get())
-                .add(ModBlocks.CAT_TREE_1.get())
-                .add(ModBlocks.CAT_TREE_2.get())
-                .add(ModBlocks.CAT_TREE_3.get())
-                .add(ModBlocks.CAT_TREE_4.get())
-                .add(ModBlocks.CAT_TREE_5.get())
-                .add(ModBlocks.CAT_TREE_6.get());
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_BLOCK.get()))
+                .add(ModBlocks.getRK(ModBlocks.SMALL_ICED_CRYSTAL_BUD.get()))
+                .add(ModBlocks.getRK(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get()))
+                .add(ModBlocks.getRK(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_CLUSTER.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_BRICKS.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_PILLAR.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_LAMP.get()))
+                .add(ModBlocks.getRK(ModBlocks.CAT_TREE_1.get()))
+                .add(ModBlocks.getRK(ModBlocks.CAT_TREE_2.get()))
+                .add(ModBlocks.getRK(ModBlocks.CAT_TREE_3.get()))
+                .add(ModBlocks.getRK(ModBlocks.CAT_TREE_4.get()))
+                .add(ModBlocks.getRK(ModBlocks.CAT_TREE_5.get()))
+                .add(ModBlocks.getRK(ModBlocks.CAT_TREE_6.get()));
 
-
+        /*  Needs Iron Tool  */
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ICED_CRYSTAL_BLOCK.get())
-                .add(ModBlocks.SMALL_ICED_CRYSTAL_BUD.get())
-                .add(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get())
-                .add(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get())
-                .add(ModBlocks.ICED_CRYSTAL_CLUSTER.get());
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_BLOCK.get()))
+                .add(ModBlocks.getRK(ModBlocks.SMALL_ICED_CRYSTAL_BUD.get()))
+                .add(ModBlocks.getRK(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get()))
+                .add(ModBlocks.getRK(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_CLUSTER.get()));
 
-
+        /*  Needs/Incorrect for Iced Crystal Tool  */
         tag(ModTags.Blocks.NEEDS_ICED_CRYSTAL_TOOL)
-                .add(ModBlocks.ICED_CRYSTAL_BLOCK.get())
+                .add(ModBlocks.getRK(ModBlocks.ICED_CRYSTAL_BLOCK.get()))
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_ICED_CRYSTAL_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_ICED_CRYSTAL_TOOL);
 
-        /*tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)*/
     }
 }

@@ -21,21 +21,20 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.solarpancakestweaks.solarpancakes_tweaks"))
                     .displayItems((itemDisplayParameters, output) -> {
 
+
+                        /*  ModItems  */
                         output.accept(ModItems.ICED_CRYSTAL_SWORD);
                         output.accept(ModItems.ICED_CRYSTAL_PICKAXE);
                         output.accept(ModItems.ICED_CRYSTAL_SHOVEL);
                         output.accept(ModItems.ICED_CRYSTAL_AXE);
                         output.accept(ModItems.ICED_CRYSTAL_HOE);
                         output.accept(ModItems.ICED_CRYSTAL_SPEAR);
-
                         output.accept(ModItems.ICED_CRYSTAL_HELMET);
                         output.accept(ModItems.ICED_CRYSTAL_CHESTPLATE);
                         output.accept(ModItems.ICED_CRYSTAL_LEGGINGS);
                         output.accept(ModItems.ICED_CRYSTAL_BOOTS);
                         output.accept(ModItems.ICED_CRYSTAL_HORSE_ARMOR);
                         output.accept(ModItems.ICED_CRYSTAL_BOW);
-
-
                         output.accept(ModItems.CRUSHED_ICED_CRYSTAL);
                         output.accept(ModItems.GREEN_APPLE);
                         output.accept(ModItems.LEMON);
@@ -48,7 +47,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EMPTY_CAN);
                         output.accept(ModItems.ICED_CRYSTAL_ROD);
                         output.accept(ModItems.ICED_CRYSTAL);
+                        output.accept(ModItems.ICE_DETECTOR);
 
+
+                        /*  ModBlocks  */
                         output.accept(ModBlocks.ICED_CRYSTAL_BLOCK);
                         output.accept(ModBlocks.SMALL_ICED_CRYSTAL_BUD);
                         output.accept(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD);
@@ -67,9 +69,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CAT_TREE_4);
                         output.accept(ModBlocks.CAT_TREE_5);
                         output.accept(ModBlocks.CAT_TREE_6);
-
-                        output.accept(ModItems.ICE_DETECTOR);
-
 
                     }).build());
 

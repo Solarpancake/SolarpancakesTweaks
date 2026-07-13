@@ -3,6 +3,7 @@ package de.solarpancake.tweaks.datagen;
 import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.block.ModBlocks;
 import de.solarpancake.tweaks.block.custom.IcedCrystalLampBlock;
+import de.solarpancake.tweaks.block.custom.RaspberryBushBlock;
 import de.solarpancake.tweaks.item.ModArmorMaterials;
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -22,6 +23,8 @@ public class ModModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
+
+        /*  FlatItem  */
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CRUSHED_ICED_CRYSTAL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.GREEN_APPLE.get(), ModelTemplates.FLAT_ITEM);
@@ -34,56 +37,71 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.LEMON.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICE_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_ROD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.RASPBERRY.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
 
+        /*  FlatHandheldItem  */
+        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
 
+        /*  TrimmableItem  */
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_HELMET.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_CHESTPLATE.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_LEGGINGS.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_BOOTS.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
 
-        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        /*  SpearItem  */
         itemModels.generateSpear(ModItems.ICED_CRYSTAL_SPEAR.get());
 
+        /*  BowItem  */
         itemModels.createFlatItemModel(ModItems.ICED_CRYSTAL_BOW.get(), ModelTemplates.BOW);
         itemModels.generateBow(ModItems.ICED_CRYSTAL_BOW.get());
 
 
-        /* BLOCKS */
+        /*  TrivialCube  */
         blockModels.createTrivialCube(ModBlocks.ICED_CRYSTAL_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.FLOWERING_LEMON_TREE_LEAVES.get());
         blockModels.createTrivialCube(ModBlocks.BUDDING_ICED_CRYSTAL.get());
+
+        /*  AmethystClusterBlock  */
         blockModels.createAmethystCluster(ModBlocks.ICED_CRYSTAL_CLUSTER.get());
         blockModels.createAmethystCluster(ModBlocks.SMALL_ICED_CRYSTAL_BUD.get());
         blockModels.createAmethystCluster(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get());
         blockModels.createAmethystCluster(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get());
 
+
+        /*  BlockFamily  */
         blockModels.family(ModBlocks.ICED_CRYSTAL_BRICKS.get())
                 .stairs(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get())
                 .slab(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get());
 
+        /*  PillarBlocks  */
         blockModels.createRotatedPillarWithHorizontalVariant(ModBlocks.ICED_CRYSTAL_PILLAR.get(),
                 TexturedModel.COLUMN,
                 TexturedModel.COLUMN_HORIZONTAL
         );
 
+        /*  LampBlocks  */
         blockModels.blockStateOutput.accept(
                 MultiVariantGenerator.dispatch(ModBlocks.ICED_CRYSTAL_LAMP.get()).with(BlockModelGenerators.createBooleanModelDispatch(IcedCrystalLampBlock.CLICKED,
                         BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.ICED_CRYSTAL_LAMP.get(), "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube)),
                         BlockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.ICED_CRYSTAL_LAMP.get(), blockModels.modelOutput)))));
 
+        /*  CropBlocks  */
+        blockModels.createCropBlock(ModBlocks.RASPBERRY_BUSH.get(), RaspberryBushBlock.AGE, 0, 1, 2, 3);
+
+        /*  CustomBlocks  */
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_1.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_2.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_3.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_4.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_5.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_6.get());
+
+
     }
 }

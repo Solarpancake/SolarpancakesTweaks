@@ -11,7 +11,8 @@
   "item.solarpancakestweaks.raspberry_can": "Smirnoff Ice Raspberry",
   "item.solarpancakestweaks.green_apple_can": "Smirnoff Ice Green Apple",
   "item.solarpancakestweaks.iced_crystal_rod": "Iced Crystal Rod",
-  "item.solarpancakestweaks.ice_detector": "§bBudding Crystal Detector",
+
+
 
   "item.solarpancakestweaks.iced_crystal_sword": "§bIced Crystal Sword",
   "item.solarpancakestweaks.iced_crystal_pickaxe": "§bIced Crystal Pickaxe",
@@ -19,6 +20,9 @@
   "item.solarpancakestweaks.iced_crystal_axe": "§bIced Crystal Axe",
   "item.solarpancakestweaks.iced_crystal_hoe": "§bIced Crystal Hoe",
   "item.solarpancakestweaks.iced_crystal_spear": "§bIced Crystal Spear",
+  "item.solarpancakestweaks.iced_crystal_bow": "§bIced Crystal Bow",
+
+
 
   "item.solarpancakestweaks.iced_crystal_helmet": "§bIced Crystal Helmet",
   "item.solarpancakestweaks.iced_crystal_chestplate": "§bIced Crystal Chestplate",
@@ -26,10 +30,10 @@
   "item.solarpancakestweaks.iced_crystal_boots": "§bIced Crystal Boots",
   "item.solarpancakestweaks.iced_crystal_horse_armor": "§bIced Crystal Horse Armor",
 
-  "item.solarpancakestweaks.iced_crystal_bow": "§bIced Crystal Bow",
 
 
   "block.solarpancakestweaks.iced_crystal_block": "Iced Crystal Block",
+  "block.solarpancakestweaks.raspberry_bush": "Raspberry Bush",
   "block.solarpancakestweaks.iced_crystal_cluster": "Iced Crystal Cluster",
   "block.solarpancakestweaks.small_iced_crystal_bud": "Small Iced Crystal Bud",
   "block.solarpancakestweaks.medium_iced_crystal_bud": "Medium Iced Crystal Bud",
@@ -49,13 +53,15 @@
   "block.solarpancakestweaks.cat_tree_6": "Cat Tree Corner",
 
 
+
+  "item.solarpancakestweaks.ice_detector": "§bBudding Crystal Detector",
   "item.solarpancakestweaks.ice_detector.no_valuables": "No Budding Crystal Found",
-
-
   "tooltip.ice_detector.tooltips.0": "§7Right-click any block to scan",
   "tooltip.ice_detector.tooltips.1": "§7a 3×3 chunk radius for",
   "tooltip.ice_detector.tooltips.2": "§7Budding Iced Crystals.",
   "tooltip.ice_detector.tooltips.3": "§cConsumes 1 durability per use.",
+
+
 
   "creativetab.solarpancakestweaks.solarpancakes_tweaks": "Solarpancakes' Tweaks"
 }

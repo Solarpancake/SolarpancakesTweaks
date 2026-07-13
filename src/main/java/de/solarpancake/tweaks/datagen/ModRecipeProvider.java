@@ -8,8 +8,10 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.references.ItemIds;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
@@ -166,7 +168,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
         shapeless(RecipeCategory.FOOD, ModItems.GREEN_APPLE.get())
                 .requires(Items.APPLE)
-                .requires(Items.GREEN_DYE)
+                .requires(Items.DYE.green())
                 .unlockedBy(getHasName(Items.APPLE), has(Items.APPLE))
                 .save(output, "solarpancakestweaks:green_apple_from_apple");
 
