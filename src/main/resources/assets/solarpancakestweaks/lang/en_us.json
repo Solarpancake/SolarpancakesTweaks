@@ -24,6 +24,13 @@
 
 
 
+  "effect.solarpancakestweaks.drunk": "drunk",
+  "effect.solarpancakestweaks.drunk.description": "you're drunk",
+
+
+
+
+
   "item.solarpancakestweaks.iced_crystal_helmet": "§bIced Crystal Helmet",
   "item.solarpancakestweaks.iced_crystal_chestplate": "§bIced Crystal Chestplate",
   "item.solarpancakestweaks.iced_crystal_leggings": "§bIced Crystal Leggings",

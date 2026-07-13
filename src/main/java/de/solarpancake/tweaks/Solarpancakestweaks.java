@@ -2,6 +2,7 @@ package de.solarpancake.tweaks;
 
 import de.solarpancake.tweaks.block.ModBlocks;
 import de.solarpancake.tweaks.creativemodetab.ModCreativeModeTabs;
+import de.solarpancake.tweaks.effect.ModEffects;
 import de.solarpancake.tweaks.item.ModItems;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
@@ -52,7 +53,7 @@ public class Solarpancakestweaks {
 
         ModBlocks.register(modEventBus);
 
-
+        ModEffects.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
