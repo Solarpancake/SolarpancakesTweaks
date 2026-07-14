@@ -2,6 +2,7 @@ package de.solarpancake.tweaks.datagen;
 
 import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.block.ModBlocks;
+import de.solarpancake.tweaks.block.custom.DillCropBlock;
 import de.solarpancake.tweaks.block.custom.IcedCrystalLampBlock;
 import de.solarpancake.tweaks.block.custom.RaspberryBushBlock;
 import de.solarpancake.tweaks.item.ModArmorMaterials;
@@ -35,6 +36,7 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.BLACK_CAN.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.EMPTY_CAN.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.LEMON.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.DILL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICE_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_ROD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
@@ -93,6 +95,7 @@ public class ModModelProvider extends ModelProvider {
 
         /*  CropBlocks  */
         blockModels.createCropBlock(ModBlocks.RASPBERRY_BUSH.get(), RaspberryBushBlock.AGE, 0, 1, 2, 3);
+        blockModels.createCropBlock(ModBlocks.DILL_CROP.get(), DillCropBlock.AGE, 0, 1, 2, 3);
 
         /*  CustomBlocks  */
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_1.get());

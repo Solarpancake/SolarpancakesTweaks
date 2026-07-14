@@ -48,6 +48,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICED_CRYSTAL_ROD);
                         output.accept(ModItems.ICED_CRYSTAL);
                         output.accept(ModItems.ICE_DETECTOR);
+                        output.accept(ModItems.DILL_SEEDS);
 
 
                         /*  ModBlocks  */

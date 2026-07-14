@@ -1,6 +1,7 @@
 package de.solarpancake.tweaks.datagen;
 
 import de.solarpancake.tweaks.block.ModBlocks;
+import de.solarpancake.tweaks.block.custom.DillCropBlock;
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.advancements.predicates.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
@@ -65,7 +66,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CAT_TREE_5.get());
         dropSelf(ModBlocks.CAT_TREE_6.get());
 
-
+        add(ModBlocks.DILL_CROP.get(), createCropDrops(ModBlocks.DILL_CROP.get(),
+                ModItems.DILL.get(), ModItems.DILL_SEEDS.get(), LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.DILL_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DillCropBlock.AGE, 3))));
 
         /*  BushBlock  */
         this.add(ModBlocks.RASPBERRY_BUSH.get(), block -> this.applyExplosionDecay(block, LootTable.lootTable().withPool(

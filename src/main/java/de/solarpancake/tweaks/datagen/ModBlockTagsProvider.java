@@ -54,5 +54,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_ICED_CRYSTAL_TOOL);
 
+        tag(BlockTags.CROPS)
+                .add(ModBlocks.getRK(ModBlocks.DILL_CROP.get()));
     }
 }

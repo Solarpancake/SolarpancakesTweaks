@@ -33,6 +33,8 @@ public class ModItems {
             properties -> new Item(properties.food(ModFoods.GREEN_APPLE, ModFoods.GREE_APPLE_CONSUMABLE)));
     public static final DeferredItem<Item> LEMON = ITEMS.registerItem("lemon",
             properties -> new Item(properties.food(ModFoods.LEMON, ModFoods.LEMON_CONSUMABLE)));
+    public static final DeferredItem<Item> DILL = ITEMS.registerItem("dill",
+            properties -> new Item(properties.food(ModFoods.DILL, ModFoods.DILL_CONSUMABLE)));
     public static final DeferredItem<Item> RASPBERRY = ITEMS.registerItem("raspberry",
             properties -> new BlockItem(ModBlocks.RASPBERRY_BUSH.get(), properties.food(ModFoods.RASPBERRY)));
     public static final DeferredItem<Item> ORIGINAL_CAN = ITEMS.registerItem("original_can",
@@ -80,6 +82,10 @@ public class ModItems {
                     super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
                 }
     });
+
+
+    public static final DeferredItem<Item> DILL_SEEDS = ITEMS.registerItem("dill_seeds",
+            properties -> new BlockItem(ModBlocks.DILL_CROP.get(), properties));
 
 
 

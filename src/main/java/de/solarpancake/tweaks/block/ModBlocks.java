@@ -87,6 +87,9 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST)));
 
+    public static final DeferredBlock<Block> DILL_CROP = BLOCKS.registerBlock("dill_crop",
+            properties -> new DillCropBlock(properties.randomTicks().instabreak().noCollision().pushReaction(PushReaction.DESTROY)));
+
     public static final DeferredBlock<Block> ICED_CRYSTAL_LAMP = registerBlock("iced_crystal_lamp",
             properties -> new IcedCrystalLampBlock(properties.strength(2f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(IcedCrystalLampBlock.CLICKED) ? 15 : 0)));

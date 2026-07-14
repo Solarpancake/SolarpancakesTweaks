@@ -19,6 +19,7 @@ public class ModFoods {
     public static final FoodProperties BLACK_CAN = new FoodProperties.Builder().nutrition(4).saturationModifier(0.3f).build();
     public static final FoodProperties RASPBERRY_CAN = new FoodProperties.Builder().nutrition(4).saturationModifier(0.3f).build();
     public static final FoodProperties GREEN_APPLE_CAN = new FoodProperties.Builder().nutrition(4).saturationModifier(0.3f).build();
+    public static final FoodProperties DILL = new FoodProperties.Builder().nutrition(4).saturationModifier(0.3f).build();
 
 
 
@@ -40,5 +41,7 @@ public class ModFoods {
     public static final Consumable GREE_APPLE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(1.2f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.LUCK, 400))).build();
 
+    public static final Consumable DILL_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(1.2f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.LUCK, 400))).build();
 
 }
