@@ -16,6 +16,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Consumer;
 
+import static de.solarpancake.tweaks.block.ModBlocks.STEEL_GRATE;
+
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Solarpancakestweaks.MODID);
 
@@ -87,6 +89,7 @@ public class ModItems {
     public static final DeferredItem<Item> DILL_SEEDS = ITEMS.registerItem("dill_seeds",
             properties -> new BlockItem(ModBlocks.DILL_CROP.get(), properties));
 
+    public static final DeferredItem<BlockItem> STEEL_GRATE = ITEMS.registerSimpleBlockItem(ModBlocks.STEEL_GRATE);
 
 
     public static ResourceKey<Item> getRK(Item item) {

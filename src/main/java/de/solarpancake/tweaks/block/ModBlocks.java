@@ -117,6 +117,9 @@ public class ModBlocks {
             properties -> new RaspberryBushBlock(properties.randomTicks().sound(SoundType.SWEET_BERRY_BUSH)
                     .noCollision().pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<Block> STEEL_GRATE = BLOCKS.registerBlock("steel_grate",
+            properties -> new TransparentBlock(properties.strength(2f).requiresCorrectToolForDrops()));
+
 
 
     public static ResourceKey<Block> getRK(Block block) {

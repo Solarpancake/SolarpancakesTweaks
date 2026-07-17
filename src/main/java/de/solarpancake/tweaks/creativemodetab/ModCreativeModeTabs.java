@@ -64,6 +64,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB);
                         output.accept(ModBlocks.ICED_CRYSTAL_PILLAR);
                         output.accept(ModBlocks.ICED_CRYSTAL_LAMP);
+                        output.accept(ModBlocks.STEEL_GRATE);
                         output.accept(ModBlocks.CAT_TREE_1);
                         output.accept(ModBlocks.CAT_TREE_2);
                         output.accept(ModBlocks.CAT_TREE_3);

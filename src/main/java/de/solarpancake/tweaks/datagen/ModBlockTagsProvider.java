@@ -35,6 +35,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.CAT_TREE_3.get()))
                 .add(ModBlocks.getRK(ModBlocks.CAT_TREE_4.get()))
                 .add(ModBlocks.getRK(ModBlocks.CAT_TREE_5.get()))
+                .add(ModBlocks.getRK(ModBlocks.STEEL_GRATE.get()))
                 .add(ModBlocks.getRK(ModBlocks.CAT_TREE_6.get()));
 
         /*  Needs Iron Tool  */

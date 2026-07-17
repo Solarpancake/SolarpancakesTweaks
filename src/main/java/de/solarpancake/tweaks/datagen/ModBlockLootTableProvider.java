@@ -65,6 +65,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CAT_TREE_4.get());
         dropSelf(ModBlocks.CAT_TREE_5.get());
         dropSelf(ModBlocks.CAT_TREE_6.get());
+        dropSelf(ModBlocks.STEEL_GRATE.get());
 
         add(ModBlocks.DILL_CROP.get(), createCropDrops(ModBlocks.DILL_CROP.get(),
                 ModItems.DILL.get(), ModItems.DILL_SEEDS.get(), LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.DILL_CROP.get())

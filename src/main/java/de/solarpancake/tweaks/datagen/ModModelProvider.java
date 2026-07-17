@@ -68,6 +68,7 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.ICED_CRYSTAL_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.FLOWERING_LEMON_TREE_LEAVES.get());
         blockModels.createTrivialCube(ModBlocks.BUDDING_ICED_CRYSTAL.get());
+        blockModels.createTrivialCube(ModBlocks.STEEL_GRATE.get());
 
         /*  AmethystClusterBlock  */
         blockModels.createAmethystCluster(ModBlocks.ICED_CRYSTAL_CLUSTER.get());
