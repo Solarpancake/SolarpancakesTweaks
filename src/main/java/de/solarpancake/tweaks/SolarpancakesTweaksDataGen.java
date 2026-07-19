@@ -30,6 +30,7 @@ public class SolarpancakesTweaksDataGen {
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
         generator.addProvider(true, new ModItemTagsProvider(packOutput, lookupProvider));
         generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
+        generator.addProvider(true, new ModAdvancements(packOutput, lookupProvider));
 
 
 

@@ -73,6 +73,15 @@
   "tooltip.ice_detector.tooltips.3": "§cConsumes 1 durability per use.",
 
 
+  "advancements.solarpancakestweaks.root.title": "Solarpancakes' Tweaks",
+  "advancements.solarpancakestweaks.root.description": "Wonderful Advancements!",
+
+  "advancements.solarpancakestweaks.plant_custom.title": "Plant a Custom Plant",
+  "advancements.solarpancakestweaks.plant_custom.description": "Stardew Valley ahh Type Shit",
+
+  "advancements.solarpancakestweaks.ice_detector.title": "Detected Potential",
+  "advancements.solarpancakestweaks.ice_detector.description": "Try finding Budding Iced Crystals with the §bBudding Crystal Detector",
+
 
   "creativetab.solarpancakestweaks.solarpancakes_tweaks": "Solarpancakes' Tweaks"
 }
