@@ -2,6 +2,7 @@ package de.solarpancake.tweaks;
 
 
 import de.solarpancake.tweaks.datagen.*;
+import de.solarpancake.tweaks.datagen.villager.ModVillagerTradeTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -31,6 +32,8 @@ public class SolarpancakesTweaksDataGen {
         generator.addProvider(true, new ModItemTagsProvider(packOutput, lookupProvider));
         generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
         generator.addProvider(true, new ModAdvancements(packOutput, lookupProvider));
+        generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModVillagerTradeTags(packOutput, lookupProvider));
 
 
 

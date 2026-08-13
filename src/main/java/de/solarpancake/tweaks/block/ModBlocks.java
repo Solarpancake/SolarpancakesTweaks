@@ -112,6 +112,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CAT_TREE_6 = registerBlock("cat_tree_6",
             properties -> new CatTree4(properties.strength(2f)
                     .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> BLENDER_BLOCK = registerBlock("blender_block",
+            properties -> new BlenderBlock(properties.strength(2f)
+                    .requiresCorrectToolForDrops()));
 
     public static final  DeferredBlock<Block> RASPBERRY_BUSH = BLOCKS.registerBlock("raspberry_bush",
             properties -> new RaspberryBushBlock(properties.randomTicks().sound(SoundType.SWEET_BERRY_BUSH)

@@ -71,6 +71,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CAT_TREE_4);
                         output.accept(ModBlocks.CAT_TREE_5);
                         output.accept(ModBlocks.CAT_TREE_6);
+                        output.accept(ModBlocks.BLENDER_BLOCK);
 
                     }).build());
 

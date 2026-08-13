@@ -105,6 +105,7 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_4.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_5.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.CAT_TREE_6.get());
+        blockModels.createNonTemplateModelBlock(ModBlocks.BLENDER_BLOCK.get());
 
 
     }
