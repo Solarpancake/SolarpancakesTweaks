@@ -36,18 +36,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICED_CRYSTAL_HORSE_ARMOR);
                         output.accept(ModItems.ICED_CRYSTAL_BOW);
                         output.accept(ModItems.CRUSHED_ICED_CRYSTAL);
-                        output.accept(ModItems.GREEN_APPLE);
-                        output.accept(ModItems.LEMON);
-                        output.accept(ModItems.RASPBERRY);
-                        output.accept(ModItems.GREEN_APPLE_SLICED);
+                        output.accept(ModItems.ICED_CRYSTAL_ROD);
+                        output.accept(ModItems.ICED_CRYSTAL);
+                        output.accept(ModItems.ICE_DETECTOR);
+
                         output.accept(ModItems.GREEN_APPLE_CAN);
                         output.accept(ModItems.ORIGINAL_CAN);
                         output.accept(ModItems.RASPBERRY_CAN);
                         output.accept(ModItems.BLACK_CAN);
                         output.accept(ModItems.EMPTY_CAN);
-                        output.accept(ModItems.ICED_CRYSTAL_ROD);
-                        output.accept(ModItems.ICED_CRYSTAL);
-                        output.accept(ModItems.ICE_DETECTOR);
+
+                        output.accept(ModItems.GREEN_APPLE_SLICED);
+                        output.accept(ModItems.GREEN_APPLE);
+                        output.accept(ModItems.LEMON);
+                        output.accept(ModItems.RASPBERRY);
                         output.accept(ModItems.DILL_SEEDS);
 
 
@@ -58,20 +60,23 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LARGE_ICED_CRYSTAL_BUD);
                         output.accept(ModBlocks.ICED_CRYSTAL_CLUSTER);
                         output.accept(ModBlocks.BUDDING_ICED_CRYSTAL);
-                        output.accept(ModBlocks.FLOWERING_LEMON_TREE_LEAVES);
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS);
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS);
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB);
                         output.accept(ModBlocks.ICED_CRYSTAL_PILLAR);
                         output.accept(ModBlocks.ICED_CRYSTAL_LAMP);
+
+                        output.accept(ModBlocks.FLOWERING_LEMON_TREE_LEAVES);
+
                         output.accept(ModBlocks.STEEL_GRATE);
+                        output.accept(ModBlocks.BLENDER_BLOCK);
+
                         output.accept(ModBlocks.CAT_TREE_1);
                         output.accept(ModBlocks.CAT_TREE_2);
                         output.accept(ModBlocks.CAT_TREE_3);
                         output.accept(ModBlocks.CAT_TREE_4);
                         output.accept(ModBlocks.CAT_TREE_5);
                         output.accept(ModBlocks.CAT_TREE_6);
-                        output.accept(ModBlocks.BLENDER_BLOCK);
 
                     }).build());
 

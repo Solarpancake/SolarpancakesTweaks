@@ -39,6 +39,10 @@ public class ModRecipeProvider extends RecipeProvider {
     }
     @Override
     protected void buildRecipes() {
+
+
+        /* shaped recipe */
+
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BLOCK.get())
                 .pattern("AA")
                 .pattern("AA")
@@ -54,13 +58,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.ICED_CRYSTAL.get()), has(ModItems.ICED_CRYSTAL))
                 .group("iced_crystal")
                 .save(output, "solarpancakestweaks:iced_crystal_bricks_from_iced_crystal");
-
-        stairBuilder(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get(), Ingredient.of(ModBlocks.ICED_CRYSTAL_BRICKS))
-                .unlockedBy(getHasName(ModBlocks.ICED_CRYSTAL_BRICKS.get()), has(ModBlocks.ICED_CRYSTAL_BRICKS))
-                        .group("iced_crystal")
-                        .save(output);
-
-        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get(), ModBlocks.ICED_CRYSTAL_BRICKS.get());
 
         shaped(RecipeCategory.MISC, ModItems.ICE_DETECTOR.get())
                 .pattern("  B")
@@ -166,11 +163,25 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("iced_crystal")
                 .save(output, "solarpancakestweaks:iced_crystal_spear_from_iced_crystal");
 
+
+        /* shapeless */
+
         shapeless(RecipeCategory.FOOD, ModItems.GREEN_APPLE.get())
                 .requires(Items.APPLE)
                 .requires(Items.DYE.green())
                 .unlockedBy(getHasName(Items.APPLE), has(Items.APPLE))
                 .save(output, "solarpancakestweaks:green_apple_from_apple");
+
+        
+        /* special/custom */
+
+        stairBuilder(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get(), Ingredient.of(ModBlocks.ICED_CRYSTAL_BRICKS))
+                .unlockedBy(getHasName(ModBlocks.ICED_CRYSTAL_BRICKS.get()), has(ModBlocks.ICED_CRYSTAL_BRICKS))
+                .group("iced_crystal")
+                .save(output);
+
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get(), ModBlocks.ICED_CRYSTAL_BRICKS.get());
+
 
     }
 }

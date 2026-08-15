@@ -71,6 +71,8 @@ public class ModItems {
             properties -> new Item(properties.horseArmor(ModArmorMaterials.ICED_CRYSTAL_ARMOR_MATERIAL)));
     public static final DeferredItem<Item> ICED_CRYSTAL_BOW = ITEMS.registerItem("iced_crystal_bow",
             properties -> new BowItem(properties.durability(500)));
+    public static final DeferredItem<Item> DILL_SEEDS = ITEMS.registerItem("dill_seeds",
+            properties -> new BlockItem(ModBlocks.DILL_CROP.get(), properties));
 
 
     /*  CustomItems  */
@@ -86,11 +88,11 @@ public class ModItems {
     });
 
 
-    public static final DeferredItem<Item> DILL_SEEDS = ITEMS.registerItem("dill_seeds",
-            properties -> new BlockItem(ModBlocks.DILL_CROP.get(), properties));
-
+    /* BlockItems */
     public static final DeferredItem<BlockItem> STEEL_GRATE = ITEMS.registerSimpleBlockItem(ModBlocks.STEEL_GRATE);
 
+
+    /* helper methods */
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();

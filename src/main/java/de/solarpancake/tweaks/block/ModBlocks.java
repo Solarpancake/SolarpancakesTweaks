@@ -21,24 +21,47 @@ public class ModBlocks {
             DeferredRegister.createBlocks(Solarpancakestweaks.MODID);
 
 
+    /* Iced Crystal stuff */
 
     public static final DeferredBlock<Block> ICED_CRYSTAL_BLOCK = registerBlock("iced_crystal_block",
-            properties -> new Block(properties.strength(4f)
-                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-
-    public static final DeferredBlock<Block> FLOWERING_LEMON_TREE_LEAVES = registerBlock("flowering_lemon_tree_leaves",
-            properties -> new Block(properties.strength(4f)));
-
+            properties -> new Block(properties
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)));
 
     public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS = registerBlock("iced_crystal_bricks",
-            properties -> new Block(properties.strength(4f)));
+            properties -> new Block(properties
+                    .strength(4f)));
+
+    public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS_STAIRS = registerBlock("iced_crystal_bricks_stairs",
+            properties -> new StairBlock(ModBlocks.ICED_CRYSTAL_BRICKS.get().defaultBlockState(), properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS_SLAB = registerBlock("iced_crystal_bricks_slab",
+            properties -> new SlabBlock(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> ICED_CRYSTAL_LAMP = registerBlock("iced_crystal_lamp",
+            properties -> new IcedCrystalLampBlock(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(IcedCrystalLampBlock.CLICKED) ? 15 : 0)));
+
+    public static final DeferredBlock<Block> ICED_CRYSTAL_PILLAR = registerBlock("iced_crystal_pillar",
+            properties -> new RotatedPillarBlock(properties
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)));
 
     public static final DeferredBlock<Block> BUDDING_ICED_CRYSTAL = registerBlock("budding_iced_crystal",
             properties -> new BuddingIcedCrystalBlock(properties
                     .strength(1.5f)
                     .sound(SoundType.AMETHYST)
                     .randomTicks()));
-
 
     public static final DeferredBlock<Block> ICED_CRYSTAL_CLUSTER = registerBlock("iced_crystal_cluster",
             properties -> new AmethystClusterBlock(7, 3, properties
@@ -73,57 +96,75 @@ public class ModBlocks {
                     .pushReaction(PushReaction.DESTROY)));
 
 
-    public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS_STAIRS = registerBlock("iced_crystal_bricks_stairs",
-            properties -> new StairBlock(ModBlocks.ICED_CRYSTAL_BRICKS.get().defaultBlockState(), properties.strength(2f)
-                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    /* crop related stuff */
 
-    public static final DeferredBlock<Block> ICED_CRYSTAL_BRICKS_SLAB = registerBlock("iced_crystal_bricks_slab",
-            properties -> new SlabBlock(properties.strength(2f)
-                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-
-    public static final DeferredBlock<Block> ICED_CRYSTAL_PILLAR = registerBlock("iced_crystal_pillar",
-            properties -> new RotatedPillarBlock(properties
-                    .strength(4f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.AMETHYST)));
-
-    public static final DeferredBlock<Block> DILL_CROP = BLOCKS.registerBlock("dill_crop",
-            properties -> new DillCropBlock(properties.randomTicks().instabreak().noCollision().pushReaction(PushReaction.DESTROY)));
-
-    public static final DeferredBlock<Block> ICED_CRYSTAL_LAMP = registerBlock("iced_crystal_lamp",
-            properties -> new IcedCrystalLampBlock(properties.strength(2f)
-                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(IcedCrystalLampBlock.CLICKED) ? 15 : 0)));
-
-    public static final DeferredBlock<Block> CAT_TREE_1 = registerBlock("cat_tree_1",
-            properties -> new CatTree1(properties.strength(2f)
-                    .requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> CAT_TREE_2 = registerBlock("cat_tree_2",
-            properties -> new CatTree2(properties.strength(2f)
-                    .requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> CAT_TREE_3 = registerBlock("cat_tree_3",
-            properties -> new CatTree3(properties.strength(2f)
-                    .requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> CAT_TREE_4 = registerBlock("cat_tree_4",
-            properties -> new CatTree4(properties.strength(2f)
-                    .requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> CAT_TREE_5 = registerBlock("cat_tree_5",
-            properties -> new CatTree4(properties.strength(2f)
-                    .requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> CAT_TREE_6 = registerBlock("cat_tree_6",
-            properties -> new CatTree4(properties.strength(2f)
-                    .requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> BLENDER_BLOCK = registerBlock("blender_block",
-            properties -> new BlenderBlock(properties.strength(2f)
-                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> FLOWERING_LEMON_TREE_LEAVES = registerBlock("flowering_lemon_tree_leaves",
+            properties -> new Block(properties
+                    .strength(4f)));
 
     public static final  DeferredBlock<Block> RASPBERRY_BUSH = BLOCKS.registerBlock("raspberry_bush",
-            properties -> new RaspberryBushBlock(properties.randomTicks().sound(SoundType.SWEET_BERRY_BUSH)
-                    .noCollision().pushReaction(PushReaction.DESTROY)));
+            properties -> new RaspberryBushBlock(properties
+                    .randomTicks()
+                    .sound(SoundType.SWEET_BERRY_BUSH)
+                    .noCollision()
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<Block> DILL_CROP = BLOCKS.registerBlock("dill_crop",
+            properties -> new DillCropBlock(properties
+                    .randomTicks()
+                    .instabreak()
+                    .noCollision()
+                    .pushReaction(PushReaction.DESTROY)));
+
+
+    /* cat tree thingy related stuff */
+
+    public static final DeferredBlock<Block> CAT_TREE_1 = registerBlock("cat_tree_1",
+            properties -> new CatTree1(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> CAT_TREE_2 = registerBlock("cat_tree_2",
+            properties -> new CatTree2(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> CAT_TREE_3 = registerBlock("cat_tree_3",
+            properties -> new CatTree3(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> CAT_TREE_4 = registerBlock("cat_tree_4",
+            properties -> new CatTree4(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> CAT_TREE_5 = registerBlock("cat_tree_5",
+            properties -> new CatTree4(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> CAT_TREE_6 = registerBlock("cat_tree_6",
+            properties -> new CatTree4(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> BLENDER_BLOCK = registerBlock("blender_block",
+            properties -> new BlenderBlock(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+
+    /* other stuff */
 
     public static final DeferredBlock<Block> STEEL_GRATE = BLOCKS.registerBlock("steel_grate",
-            properties -> new TransparentBlock(properties.strength(2f).requiresCorrectToolForDrops()));
+            properties -> new TransparentBlock(properties
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
 
 
+
+    /* helper methods */
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();
