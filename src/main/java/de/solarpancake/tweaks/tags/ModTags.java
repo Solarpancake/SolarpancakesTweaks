@@ -1,11 +1,13 @@
 package de.solarpancake.tweaks.tags;
 
 import de.solarpancake.tweaks.Solarpancakestweaks;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.trading.VillagerTrade;
 import net.minecraft.world.level.block.Block;
 
 public class ModTags {
@@ -21,8 +23,6 @@ public class ModTags {
     }
 
 
-
-
     public static class Items {
         public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
         public static final TagKey<Item> ICED_CRYSTAL_REPAIRABLE = createTag("iced_crystal_repairable");
@@ -31,4 +31,16 @@ public class ModTags {
             return ItemTags.create(Identifier.fromNamespaceAndPath(Solarpancakestweaks.MODID, name));
         }
     }
+
+    public static class Trades {
+        public static final TagKey<VillagerTrade> BARTENDER_LEVEL_1 = createTag("bartender/level_1");
+        public static final TagKey<VillagerTrade> BARTENDER_LEVEL_2 = createTag("bartender/level_2");
+
+        
+        private static TagKey<VillagerTrade> createTag(String name) {
+            return TagKey.create(Registries.VILLAGER_TRADE, Identifier.fromNamespaceAndPath(Solarpancakestweaks.MODID, name));
+        }
+    }
+
+
 }

@@ -42,7 +42,7 @@ public class ModAdvancements extends AdvancementProvider {
                             ModItems.ICED_CRYSTAL,
                             Component.translatable("advancements.solarpancakestweaks.root.title"),
                             Component.translatable("advancements.solarpancakestweaks.root.description"),
-                            Identifier.withDefaultNamespace("gui/advancements/backgrounds/adventure"),
+                            Identifier.fromNamespaceAndPath(Solarpancakestweaks.MODID, "textures/gui/advancements/backgrounds/steel_grate.png"),
                             AdvancementType.TASK,
                             false,
                             false,
