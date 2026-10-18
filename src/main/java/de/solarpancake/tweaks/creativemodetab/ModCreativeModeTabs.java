@@ -40,6 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICED_CRYSTAL);
                         output.accept(ModItems.ICE_DETECTOR);
                         output.accept(ModItems.SHUFFLE_SHOVEL);
+                        output.accept(ModItems.MAGNET);
 
                         output.accept(ModItems.GREEN_APPLE_CAN);
                         output.accept(ModItems.ORIGINAL_CAN);

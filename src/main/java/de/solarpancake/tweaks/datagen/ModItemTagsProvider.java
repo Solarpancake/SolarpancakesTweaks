@@ -4,9 +4,12 @@ import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.item.ModItems;
 import de.solarpancake.tweaks.tags.ModTags;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.references.BlockIds;
 import net.minecraft.references.ItemIds;
+import net.minecraft.resources.Identifier;
+import net.minecraft.tags.TagKey;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -41,6 +44,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.CHEST_ARMOR).add(ModItems.getRK(ModItems.ICED_CRYSTAL_CHESTPLATE.get()));
         tag(ItemTags.LEG_ARMOR).add(ModItems.getRK(ModItems.ICED_CRYSTAL_LEGGINGS.get()));
         tag(ItemTags.FOOT_ARMOR).add(ModItems.getRK(ModItems.ICED_CRYSTAL_BOOTS.get()));
+
+        /*  Curios (only used when Curios is installed)  */
+        tag(TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("curios", "charm")))
+                .add(ModItems.getRK(ModItems.MAGNET.get()));
 
 
     }

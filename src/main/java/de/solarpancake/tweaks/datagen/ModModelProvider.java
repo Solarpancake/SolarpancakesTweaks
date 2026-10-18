@@ -46,6 +46,7 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.LEMON.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.DILL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICE_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.MAGNET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_ROD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
 

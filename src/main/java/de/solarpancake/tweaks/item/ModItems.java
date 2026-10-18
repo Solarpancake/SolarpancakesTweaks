@@ -4,6 +4,7 @@ import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.block.ModBlocks;
 import de.solarpancake.tweaks.food.ModFoods;
 import de.solarpancake.tweaks.item.custom.IceDetectorItem;
+import de.solarpancake.tweaks.item.custom.MagnetItem;
 import de.solarpancake.tweaks.item.custom.ShuffleShovelItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -90,6 +91,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> SHUFFLE_SHOVEL = ITEMS.registerItem("shuffle_shovel",
             properties -> new ShuffleShovelItem(properties.stacksTo(1)));
+    public static final DeferredItem<Item> MAGNET = ITEMS.registerItem("magnet",
+            properties -> new MagnetItem(properties.stacksTo(1)));
 
 
     /* BlockItems */

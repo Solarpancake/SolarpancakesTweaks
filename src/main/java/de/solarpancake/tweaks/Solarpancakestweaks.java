@@ -2,6 +2,8 @@ package de.solarpancake.tweaks;
 
 import de.solarpancake.tweaks.attachment.ModAttachments;
 import de.solarpancake.tweaks.block.ModBlocks;
+import de.solarpancake.tweaks.compat.CuriosCompat;
+import de.solarpancake.tweaks.component.ModDataComponents;
 import de.solarpancake.tweaks.creativemodetab.ModCreativeModeTabs;
 import de.solarpancake.tweaks.effect.ModEffects;
 import de.solarpancake.tweaks.item.ModItems;
@@ -64,6 +66,8 @@ public class Solarpancakestweaks {
 
         ModRecipes.register(modEventBus);
 
+        ModDataComponents.register(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
@@ -72,6 +76,7 @@ public class Solarpancakestweaks {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+        CuriosCompat.init();
 
     }
 
