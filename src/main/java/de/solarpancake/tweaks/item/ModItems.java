@@ -4,6 +4,7 @@ import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.block.ModBlocks;
 import de.solarpancake.tweaks.food.ModFoods;
 import de.solarpancake.tweaks.item.custom.IceDetectorItem;
+import de.solarpancake.tweaks.item.custom.ShuffleShovelItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -52,13 +53,13 @@ public class ModItems {
     public static final DeferredItem<Item> ICED_CRYSTAL_PICKAXE = ITEMS.registerItem("iced_crystal_pickaxe",
             properties -> new Item(properties.pickaxe(ModToolTiers.ICED_CRYSTAL, 1, -2.8f)));
     public static final DeferredItem<Item> ICED_CRYSTAL_AXE = ITEMS.registerItem("iced_crystal_axe",
-            properties -> new AxeItem(ModToolTiers.ICED_CRYSTAL, 6, -3.2f, properties));
+            properties -> new AxeItem(ModToolTiers.ICED_CRYSTAL, 5, -3.0f, properties));
     public static final DeferredItem<Item> ICED_CRYSTAL_SHOVEL = ITEMS.registerItem("iced_crystal_shovel",
             properties -> new ShovelItem(ModToolTiers.ICED_CRYSTAL, 1.5f, -3.0f, properties));
     public static final DeferredItem<Item> ICED_CRYSTAL_HOE = ITEMS.registerItem("iced_crystal_hoe",
-            properties -> new HoeItem(ModToolTiers.ICED_CRYSTAL, 0, -3, properties));
+            properties -> new HoeItem(ModToolTiers.ICED_CRYSTAL, -4.5f, 0, properties));
     public static final DeferredItem<Item> ICED_CRYSTAL_SPEAR = ITEMS.registerItem("iced_crystal_spear",
-            properties -> new Item(properties.spear(ModToolTiers.ICED_CRYSTAL, 0.96f, 0.7f, 0.1f, 3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f)));
+            properties -> new Item(properties.spear(ModToolTiers.ICED_CRYSTAL, 1.2f, 1.3f, 0.35f, 2.5f, 8.5f, 5.0f, 5.1f, 8.0f, 4.6f)));
     public static final DeferredItem<Item> ICED_CRYSTAL_HELMET = ITEMS.registerItem("iced_crystal_helmet",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.ICED_CRYSTAL_ARMOR_MATERIAL, ArmorType.HELMET)));
     public static final DeferredItem<Item> ICED_CRYSTAL_CHESTPLATE = ITEMS.registerItem("iced_crystal_chestplate",
@@ -86,6 +87,9 @@ public class ModItems {
                     super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
                 }
     });
+
+    public static final DeferredItem<Item> SHUFFLE_SHOVEL = ITEMS.registerItem("shuffle_shovel",
+            properties -> new ShuffleShovelItem(properties.stacksTo(1)));
 
 
     /* BlockItems */

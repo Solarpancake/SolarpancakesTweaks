@@ -63,8 +63,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CAT_TREE_2.get());
         dropSelf(ModBlocks.CAT_TREE_3.get());
         dropSelf(ModBlocks.CAT_TREE_4.get());
-        dropSelf(ModBlocks.CAT_TREE_5.get());
-        dropSelf(ModBlocks.CAT_TREE_6.get());
         dropSelf(ModBlocks.STEEL_GRATE.get());
         dropSelf(ModBlocks.BLENDER_BLOCK.get());
 

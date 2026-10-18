@@ -17,6 +17,9 @@ import java.util.Optional;
 public class ModVillagerTrades {
     public static final ResourceKey<VillagerTrade> FARMER_1_EMERALD_RASPBERRY = createKey("farmer_1_emerald_raspberry");
     public static final ResourceKey<VillagerTrade> FARMER_1_EMERALD_LEMON = createKey("farmer_1_emerald_lemon");
+    //public static final ResourceKey<VillagerTrade> FARMER_1_EMERALD_LEMON = createKey("farmer_1_emerald_lemon");
+    public static final ResourceKey<VillagerTrade> FARMER_2_ = createKey("farmer_1_emerald_lemon");
+
 
 
 
@@ -35,6 +38,11 @@ public class ModVillagerTrades {
                 new TradeCost(Items.EMERALD, 4),
                 new ItemStackTemplate(ModItems.RASPBERRY, 8),
                 12, 6, 0.05f, Optional.empty(), List.of()));
+
+        //context.register(FARMER_1_EMERALD_RASPBERRY, new VillagerTrade(
+                //new TradeCost(Items.EMERALD, 4),
+                //new ItemStackTemplate(ModItems.RASPBERRY, 8),
+                //12, 6, 0.05f, Optional.empty(), List.of()));
 
 
     }

@@ -3,11 +3,13 @@ package de.solarpancake.tweaks.datagen;
 import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.block.ModBlocks;
 import de.solarpancake.tweaks.item.ModItems;
+import de.solarpancake.tweaks.recipe.BlenderRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.SingleItemRecipeBuilder;
 import net.minecraft.references.ItemIds;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -68,6 +70,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.ICED_CRYSTAL.get()), has(ModItems.ICED_CRYSTAL))
                 .group("iced_crystal")
                 .save(output, "solarpancakestweaks:ice_detector_craft");
+
+        shaped(RecipeCategory.TOOLS, ModItems.SHUFFLE_SHOVEL.get())
+                .pattern(" B")
+                .pattern("A ")
+                .define('A', Items.STICK)
+                .define('B', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(output, "solarpancakestweaks:shuffle_shovel_craft");
 
         shaped(RecipeCategory.COMBAT, ModItems.ICED_CRYSTAL_HELMET.get())
                 .pattern("AAA")
@@ -173,6 +183,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(output, "solarpancakestweaks:green_apple_from_apple");
 
         
+        /* blender (empty can + crushed iced crystal are always required, the ingredient is the fruit) */
+
+        blending(ModItems.RASPBERRY.get(), ModItems.RASPBERRY_CAN.get());
+        blending(ModItems.GREEN_APPLE.get(), ModItems.GREEN_APPLE_CAN.get());
+        blending(ModItems.LEMON.get(), ModItems.ORIGINAL_CAN.get());
+
+
         /* special/custom */
 
         stairBuilder(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS.get(), Ingredient.of(ModBlocks.ICED_CRYSTAL_BRICKS))
@@ -183,5 +200,11 @@ public class ModRecipeProvider extends RecipeProvider {
         slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get(), ModBlocks.ICED_CRYSTAL_BRICKS.get());
 
 
+    }
+
+    private void blending(ItemLike fruit, ItemLike result) {
+        new SingleItemRecipeBuilder(RecipeCategory.FOOD, BlenderRecipe::new, Ingredient.of(fruit), result, 1)
+                .unlockedBy(getHasName(ModItems.EMPTY_CAN.get()), has(ModItems.EMPTY_CAN))
+                .save(output, Solarpancakestweaks.MODID + ":" + getItemName(result) + "_from_blending");
     }
 }

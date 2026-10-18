@@ -56,13 +56,13 @@
   "block.solarpancakestweaks.iced_crystal_lamp": "Iced Crystal Lamp",
   "block.solarpancakestweaks.dill_crop": "Dill Crop",
   "block.solarpancakestweaks.cat_tree_1": "Cat Tree Base",
-  "block.solarpancakestweaks.cat_tree_2": "Cat Tree Extension",
+  "block.solarpancakestweaks.cat_tree_2": "Cat Tree Pipe",
   "block.solarpancakestweaks.cat_tree_3": "Cat Tree Cave",
   "block.solarpancakestweaks.cat_tree_4": "Cat Tree Top",
-  "block.solarpancakestweaks.cat_tree_5": "Cat Tree T-North",
-  "block.solarpancakestweaks.cat_tree_6": "Cat Tree Corner",
+  "message.solarpancakestweaks.cat_tree.bound": "Bound %s cat(s) to this cat tree",
   "block.solarpancakestweaks.steel_grate": "Steel Grate",
   "block.solarpancakestweaks.blender_block": "Blender",
+  "container.solarpancakestweaks.blender": "Blender",
 
 
 
@@ -72,6 +72,11 @@
   "tooltip.ice_detector.tooltips.1": "§7a 3×3 chunk radius for",
   "tooltip.ice_detector.tooltips.2": "§7Budding Iced Crystals.",
   "tooltip.ice_detector.tooltips.3": "§cConsumes 1 durability per use.",
+
+  "item.solarpancakestweaks.shuffle_shovel": "§bShuffle Shovel",
+  "tooltip.shuffle_shovel.tooltips.0": "§7Pulls blocks out of your hotbar",
+  "tooltip.shuffle_shovel.tooltips.1": "§7Randomly place them by right-clicking",
+  "tooltip.shuffle_shovel.tooltips.2": "§7Multiple Blocks increase the chance for that Block",
 
 
   "advancements.solarpancakestweaks.root.title": "Solarpancakes' Tweaks",

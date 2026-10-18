@@ -4,6 +4,7 @@ import de.solarpancake.tweaks.Solarpancakestweaks;
 
 import de.solarpancake.tweaks.block.custom.*;
 import de.solarpancake.tweaks.item.ModItems;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
@@ -119,35 +120,33 @@ public class ModBlocks {
 
     /* cat tree thingy related stuff */
 
+    // Base: pipes can attach on top, cats on a leash can be bound to it
     public static final DeferredBlock<Block> CAT_TREE_1 = registerBlock("cat_tree_1",
-            properties -> new CatTree1(properties
+            properties -> new CatTreeBaseBlock(properties
                     .strength(2f)
+                    .noOcclusion()
                     .requiresCorrectToolForDrops()));
 
+    // Pipe: any axis, grows T-arms towards neighbouring cat tree ends and bends into elbows
     public static final DeferredBlock<Block> CAT_TREE_2 = registerBlock("cat_tree_2",
-            properties -> new CatTree2(properties
+            properties -> new CatTreePipeBlock(properties
                     .strength(2f)
+                    .noOcclusion()
                     .requiresCorrectToolForDrops()));
 
+    // Cave: open on top and bottom
     public static final DeferredBlock<Block> CAT_TREE_3 = registerBlock("cat_tree_3",
-            properties -> new CatTree3(properties
+            properties -> new CatTreePostBlock(properties
                     .strength(2f)
-                    .requiresCorrectToolForDrops()));
+                    .noOcclusion()
+                    .requiresCorrectToolForDrops(), Direction.UP, Direction.DOWN));
 
+    // Top: pipes can attach below
     public static final DeferredBlock<Block> CAT_TREE_4 = registerBlock("cat_tree_4",
-            properties -> new CatTree4(properties
+            properties -> new CatTreePostBlock(properties
                     .strength(2f)
-                    .requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> CAT_TREE_5 = registerBlock("cat_tree_5",
-            properties -> new CatTree4(properties
-                    .strength(2f)
-                    .requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> CAT_TREE_6 = registerBlock("cat_tree_6",
-            properties -> new CatTree4(properties
-                    .strength(2f)
-                    .requiresCorrectToolForDrops()));
+                    .noOcclusion()
+                    .requiresCorrectToolForDrops(), Direction.DOWN));
 
     public static final DeferredBlock<Block> BLENDER_BLOCK = registerBlock("blender_block",
             properties -> new BlenderBlock(properties

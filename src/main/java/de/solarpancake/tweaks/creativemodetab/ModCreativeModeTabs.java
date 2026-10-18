@@ -39,6 +39,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICED_CRYSTAL_ROD);
                         output.accept(ModItems.ICED_CRYSTAL);
                         output.accept(ModItems.ICE_DETECTOR);
+                        output.accept(ModItems.SHUFFLE_SHOVEL);
 
                         output.accept(ModItems.GREEN_APPLE_CAN);
                         output.accept(ModItems.ORIGINAL_CAN);
@@ -75,8 +76,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CAT_TREE_2);
                         output.accept(ModBlocks.CAT_TREE_3);
                         output.accept(ModBlocks.CAT_TREE_4);
-                        output.accept(ModBlocks.CAT_TREE_5);
-                        output.accept(ModBlocks.CAT_TREE_6);
 
                     }).build());
 

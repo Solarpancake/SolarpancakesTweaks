@@ -1,9 +1,12 @@
 package de.solarpancake.tweaks;
 
+import de.solarpancake.tweaks.attachment.ModAttachments;
 import de.solarpancake.tweaks.block.ModBlocks;
 import de.solarpancake.tweaks.creativemodetab.ModCreativeModeTabs;
 import de.solarpancake.tweaks.effect.ModEffects;
 import de.solarpancake.tweaks.item.ModItems;
+import de.solarpancake.tweaks.recipe.ModRecipes;
+import de.solarpancake.tweaks.screen.ModMenuTypes;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -54,6 +57,12 @@ public class Solarpancakestweaks {
         ModBlocks.register(modEventBus);
 
         ModEffects.register(modEventBus);
+
+        ModAttachments.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
