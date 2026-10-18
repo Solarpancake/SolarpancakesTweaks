@@ -26,7 +26,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 
-// Places a random block from the hotbar, so the hotbar works as a block palette
 public class ShuffleShovelItem extends Item {
     public ShuffleShovelItem(Properties properties) {
         super(properties);
@@ -52,7 +51,6 @@ public class ShuffleShovelItem extends Item {
             return InteractionResult.PASS;
         }
 
-        // The block is picked on the server only, the client just swings and gets the result synced
         Level level = context.getLevel();
         if (level.isClientSide()) {
             return InteractionResult.SUCCESS;
@@ -61,7 +59,7 @@ public class ShuffleShovelItem extends Item {
         BlockHitResult hitResult = new BlockHitResult(context.getClickLocation(), context.getClickedFace(),
                 context.getClickedPos(), context.isInside());
 
-        // Try the slots in random order, so an item that can't go here (e.g. seeds on stone) doesn't block the others
+
         Collections.shuffle(paletteSlots);
         for (int slot : paletteSlots) {
             ItemStack stack = player.getInventory().getItem(slot);
@@ -84,7 +82,7 @@ public class ShuffleShovelItem extends Item {
         return slots;
     }
 
-    // BlockItem.place plays the sound for everyone except the placing player (their client would normally play it itself)
+
     private static void playPlaceSoundForPlayer(Player player, Level level, BlockPos pos) {
         if (player instanceof ServerPlayer serverPlayer) {
             BlockState state = level.getBlockState(pos);

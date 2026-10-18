@@ -120,28 +120,28 @@ public class ModBlocks {
 
     /* cat tree thingy related stuff */
 
-    // Base: pipes can attach on top, cats on a leash can be bound to it
+
     public static final DeferredBlock<Block> CAT_TREE_1 = registerBlock("cat_tree_1",
             properties -> new CatTreeBaseBlock(properties
                     .strength(2f)
                     .noOcclusion()
                     .requiresCorrectToolForDrops()));
 
-    // Pipe: any axis, grows T-arms towards neighbouring cat tree ends and bends into elbows
+
     public static final DeferredBlock<Block> CAT_TREE_2 = registerBlock("cat_tree_2",
             properties -> new CatTreePipeBlock(properties
                     .strength(2f)
                     .noOcclusion()
                     .requiresCorrectToolForDrops()));
 
-    // Cave: open on top and bottom
+
     public static final DeferredBlock<Block> CAT_TREE_3 = registerBlock("cat_tree_3",
             properties -> new CatTreePostBlock(properties
                     .strength(2f)
                     .noOcclusion()
                     .requiresCorrectToolForDrops(), Direction.UP, Direction.DOWN));
 
-    // Top: pipes can attach below
+
     public static final DeferredBlock<Block> CAT_TREE_4 = registerBlock("cat_tree_4",
             properties -> new CatTreePostBlock(properties
                     .strength(2f)

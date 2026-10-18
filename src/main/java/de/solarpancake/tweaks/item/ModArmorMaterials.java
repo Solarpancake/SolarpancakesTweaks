@@ -18,7 +18,7 @@ public class ModArmorMaterials {
 
     public static final ResourceKey<EquipmentAsset> ICED_CRYSTAL_KEY = ResourceKey.create(ROOT_ID, Identifier.fromNamespaceAndPath(Solarpancakestweaks.MODID, "iced_crystal"));
 
-    // Same defense as netherite (already a full armor bar), but more durability (40 vs 37) and toughness (3.5 vs 3.0)
+
     public static final ArmorMaterial ICED_CRYSTAL_ARMOR_MATERIAL = new ArmorMaterial(40,
             makeDefense(3, 6, 8, 3, 19), 16, SoundEvents.ARMOR_EQUIP_NETHERITE,
             3.5f, 0.1f, ModTags.Items.ICED_CRYSTAL_REPAIRABLE, ICED_CRYSTAL_KEY);

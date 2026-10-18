@@ -118,19 +118,14 @@ public class ModModelProvider extends ModelProvider {
         createCatTreePipe(blockModels, ModBlocks.CAT_TREE_2.get());
     }
 
-    /** Models face north; rotated so the front faces the player who placed it. */
+
     private static void createCatTreePost(BlockModelGenerators blockModels, Block post) {
         MultiVariant model = BlockModelGenerators.plainVariant(ModelLocationUtils.getModelLocation(post));
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(post, model)
                 .with(BlockModelGenerators.ROTATION_HORIZONTAL_FACING));
     }
 
-    /**
-     * Straight pipe: the vertical core model rotated like a log, plus side arms. Side arms come in two
-     * variants because the pipe surface is stepped (octagon-ish): "_side" fits when the steps run along
-     * the arm's local X, "_side_alt" when they run along local Y.
-     * Elbow pipe: one of the corner models, oriented to connect the kept end with the side connection.
-     */
+
     private static void createCatTreePipe(BlockModelGenerators blockModels, Block pipe) {
         MultiVariant core = BlockModelGenerators.plainVariant(ModelLocationUtils.getModelLocation(pipe));
         MultiVariant side = BlockModelGenerators.plainVariant(ModelLocationUtils.getModelLocation(pipe, "_side"));
@@ -183,7 +178,7 @@ public class ModModelProvider extends ModelProvider {
                 .term(CatTreePipeBlock.PROPERTY_BY_DIRECTION.get(direction), true);
     }
 
-    /** "_corner" connects UP + SOUTH (x=180 flips it to DOWN + NORTH), "_corner_flat" connects SOUTH + EAST. */
+
     private static MultiVariant elbowVariant(MultiVariant corner, MultiVariant cornerFlat, Direction a, Direction b) {
         if (a.getAxis() == Direction.Axis.Y || b.getAxis() == Direction.Axis.Y) {
             Direction vertical = a.getAxis() == Direction.Axis.Y ? a : b;
