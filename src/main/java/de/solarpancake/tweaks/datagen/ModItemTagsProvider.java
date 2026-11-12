@@ -6,14 +6,10 @@ import de.solarpancake.tweaks.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.references.BlockIds;
-import net.minecraft.references.ItemIds;
 import net.minecraft.resources.Identifier;
-import net.minecraft.tags.TagKey;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -25,7 +21,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-
         /*  Iced Crystal Repairable  */
         tag(ModTags.Items.ICED_CRYSTAL_REPAIRABLE)
                 .add(ModItems.getRK(ModItems.ICED_CRYSTAL.get()));
@@ -48,7 +43,5 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         /*  Curios (only used when Curios is installed)  */
         tag(TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("curios", "charm")))
                 .add(ModItems.getRK(ModItems.MAGNET.get()));
-
-
     }
 }

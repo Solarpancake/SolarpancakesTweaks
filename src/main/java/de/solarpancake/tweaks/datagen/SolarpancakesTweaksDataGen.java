@@ -1,12 +1,10 @@
-package de.solarpancake.tweaks;
+package de.solarpancake.tweaks.datagen;
 
-
-import de.solarpancake.tweaks.datagen.*;
+import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.datagen.villager.ModVillagerTradeTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -16,8 +14,8 @@ import java.util.Collections;
 import java.util.List;
 
 @EventBusSubscriber(modid = Solarpancakestweaks.MODID)
+/** Registers all data generators (run with the "data" run config). */
 public class SolarpancakesTweaksDataGen {
-
     @SubscribeEvent
     public static void gatherClientData(GatherDataEvent.Client event) {
         DataGenerator generator = event.getGenerator();
@@ -34,10 +32,5 @@ public class SolarpancakesTweaksDataGen {
         generator.addProvider(true, new ModAdvancements(packOutput, lookupProvider));
         generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
         generator.addProvider(true, new ModVillagerTradeTags(packOutput, lookupProvider));
-
-
-
-
     }
-
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "solarpancakestweaks:item/iced_crystal_bow"
+  }
+}

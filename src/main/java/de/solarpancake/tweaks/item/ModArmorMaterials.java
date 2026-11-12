@@ -18,11 +18,9 @@ public class ModArmorMaterials {
 
     public static final ResourceKey<EquipmentAsset> ICED_CRYSTAL_KEY = ResourceKey.create(ROOT_ID, Identifier.fromNamespaceAndPath(Solarpancakestweaks.MODID, "iced_crystal"));
 
-
     public static final ArmorMaterial ICED_CRYSTAL_ARMOR_MATERIAL = new ArmorMaterial(40,
             makeDefense(3, 6, 8, 3, 19), 16, SoundEvents.ARMOR_EQUIP_NETHERITE,
             3.5f, 0.1f, ModTags.Items.ICED_CRYSTAL_REPAIRABLE, ICED_CRYSTAL_KEY);
-
 
     public static Map<ArmorType, Integer> makeDefense(int boots, int legs, int chest, int helm, int body) {
         return Maps.newEnumMap(

@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "solarpancakestweaks:iced_crystal"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "solarpancakestweaks:iced_crystal"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "solarpancakestweaks:iced_crystal"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "solarpancakestweaks:iced_crystal"
+      }
+    ]
+  }
+}

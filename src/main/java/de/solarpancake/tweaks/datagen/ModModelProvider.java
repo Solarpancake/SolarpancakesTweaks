@@ -16,10 +16,10 @@ import net.minecraft.client.data.models.blockstates.ConditionBuilder;
 import net.minecraft.client.data.models.blockstates.MultiPartGenerator;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelLocationUtils;
-import net.minecraft.client.renderer.block.dispatch.VariantMutator;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TexturedModel;
+import net.minecraft.client.renderer.block.dispatch.VariantMutator;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -29,10 +29,8 @@ public class ModModelProvider extends ModelProvider {
         super(output, Solarpancakestweaks.MODID);
     }
 
-
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-
         /*  FlatItem  */
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CRUSHED_ICED_CRYSTAL.get(), ModelTemplates.FLAT_ITEM);
@@ -47,6 +45,8 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.DILL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICE_DETECTOR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.MAGNET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.MEASURING_TAPE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.CALCULATOR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_ROD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
 
@@ -58,13 +58,11 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.ICED_CRYSTAL_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.SHUFFLE_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
-
         /*  TrimmableItem  */
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_HELMET.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_CHESTPLATE.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_LEGGINGS.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModels.generateTrimmableItem(ModItems.ICED_CRYSTAL_BOOTS.get(), ModArmorMaterials.ICED_CRYSTAL_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
-
 
         /*  SpearItem  */
         itemModels.generateSpear(ModItems.ICED_CRYSTAL_SPEAR.get());
@@ -72,7 +70,6 @@ public class ModModelProvider extends ModelProvider {
         /*  BowItem  */
         itemModels.createFlatItemModel(ModItems.ICED_CRYSTAL_BOW.get(), ModelTemplates.BOW);
         itemModels.generateBow(ModItems.ICED_CRYSTAL_BOW.get());
-
 
         /*  TrivialCube  */
         blockModels.createTrivialCube(ModBlocks.ICED_CRYSTAL_BLOCK.get());
@@ -85,7 +82,6 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createAmethystCluster(ModBlocks.SMALL_ICED_CRYSTAL_BUD.get());
         blockModels.createAmethystCluster(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD.get());
         blockModels.createAmethystCluster(ModBlocks.LARGE_ICED_CRYSTAL_BUD.get());
-
 
         /*  BlockFamily  */
         blockModels.family(ModBlocks.ICED_CRYSTAL_BRICKS.get())
@@ -118,13 +114,11 @@ public class ModModelProvider extends ModelProvider {
         createCatTreePipe(blockModels, ModBlocks.CAT_TREE_2.get());
     }
 
-
     private static void createCatTreePost(BlockModelGenerators blockModels, Block post) {
         MultiVariant model = BlockModelGenerators.plainVariant(ModelLocationUtils.getModelLocation(post));
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(post, model)
                 .with(BlockModelGenerators.ROTATION_HORIZONTAL_FACING));
     }
-
 
     private static void createCatTreePipe(BlockModelGenerators blockModels, Block pipe) {
         MultiVariant core = BlockModelGenerators.plainVariant(ModelLocationUtils.getModelLocation(pipe));
@@ -177,7 +171,6 @@ public class ModModelProvider extends ModelProvider {
         return straightPipe(pipeAxis)
                 .term(CatTreePipeBlock.PROPERTY_BY_DIRECTION.get(direction), true);
     }
-
 
     private static MultiVariant elbowVariant(MultiVariant corner, MultiVariant cornerFlat, Direction a, Direction b) {
         if (a.getAxis() == Direction.Axis.Y || b.getAxis() == Direction.Axis.Y) {

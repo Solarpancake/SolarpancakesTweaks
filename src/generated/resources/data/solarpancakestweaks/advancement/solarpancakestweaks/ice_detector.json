@@ -1,0 +1,41 @@
+{
+  "parent": "solarpancakestweaks:solarpancakestweaks/root",
+  "criteria": {
+    "ice_detector": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "can_see_sky": true
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "solarpancakestweaks:ice_detector"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.solarpancakestweaks.ice_detector.description"
+    },
+    "icon": {
+      "id": "solarpancakestweaks:ice_detector"
+    },
+    "title": {
+      "translate": "advancements.solarpancakestweaks.ice_detector.title"
+    }
+  },
+  "requirements": [
+    [
+      "ice_detector"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

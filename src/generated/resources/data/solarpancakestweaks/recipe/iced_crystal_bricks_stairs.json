@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "iced_crystal",
+  "key": {
+    "#": "solarpancakestweaks:iced_crystal_bricks"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "solarpancakestweaks:iced_crystal_bricks_stairs"
+  }
+}

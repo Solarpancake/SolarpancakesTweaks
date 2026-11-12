@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "iced_crystal",
+  "key": {
+    "A": "solarpancakestweaks:iced_crystal",
+    "B": "solarpancakestweaks:iced_crystal_rod"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "B"
+  ],
+  "result": {
+    "id": "solarpancakestweaks:iced_crystal_shovel"
+  }
+}

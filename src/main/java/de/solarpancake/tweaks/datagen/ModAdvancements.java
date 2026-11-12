@@ -32,7 +32,6 @@ public class ModAdvancements extends AdvancementProvider {
     }
 
     public static class SolarpancakesTweaksAdvancements implements AdvancementSubProvider {
-
         @Override
         public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> output) {
             var items = registries.lookupOrThrow(Registries.ITEM);
@@ -86,5 +85,4 @@ public class ModAdvancements extends AdvancementProvider {
                     .save(output, Identifier.fromNamespaceAndPath(Solarpancakestweaks.MODID, "solarpancakestweaks/ice_detector"));
         }
     }
-
 }

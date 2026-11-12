@@ -1,0 +1,45 @@
+{
+  "parent": "solarpancakestweaks:solarpancakestweaks/root",
+  "criteria": {
+    "berries": {
+      "conditions": {
+        "location": [
+          {
+            "block": "solarpancakestweaks:raspberry_bush",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
+      },
+      "trigger": "minecraft:placed_block"
+    },
+    "dill": {
+      "conditions": {
+        "location": [
+          {
+            "block": "solarpancakestweaks:dill_crop",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
+      },
+      "trigger": "minecraft:placed_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.solarpancakestweaks.plant_custom.description"
+    },
+    "icon": {
+      "id": "solarpancakestweaks:raspberry"
+    },
+    "title": {
+      "translate": "advancements.solarpancakestweaks.plant_custom.title"
+    }
+  },
+  "requirements": [
+    [
+      "berries",
+      "dill"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -20,9 +20,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ICED_CRYSTAL.get()))
                     .title(Component.translatable("creativetab.solarpancakestweaks.solarpancakes_tweaks"))
                     .displayItems((itemDisplayParameters, output) -> {
-
-
-                        /*  ModItems  */
+                        /* items */
                         output.accept(ModItems.ICED_CRYSTAL_SWORD);
                         output.accept(ModItems.ICED_CRYSTAL_PICKAXE);
                         output.accept(ModItems.ICED_CRYSTAL_SHOVEL);
@@ -41,6 +39,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICE_DETECTOR);
                         output.accept(ModItems.SHUFFLE_SHOVEL);
                         output.accept(ModItems.MAGNET);
+                        output.accept(ModItems.MEASURING_TAPE);
+                        output.accept(ModItems.CALCULATOR);
 
                         output.accept(ModItems.GREEN_APPLE_CAN);
                         output.accept(ModItems.ORIGINAL_CAN);
@@ -54,14 +54,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RASPBERRY);
                         output.accept(ModItems.DILL_SEEDS);
 
-
-                        /*  ModBlocks  */
+                        /* blocks */
                         output.accept(ModBlocks.ICED_CRYSTAL_BLOCK);
-                        output.accept(ModBlocks.SMALL_ICED_CRYSTAL_BUD);
-                        output.accept(ModBlocks.MEDIUM_ICED_CRYSTAL_BUD);
-                        output.accept(ModBlocks.LARGE_ICED_CRYSTAL_BUD);
+                        // buds + budding block are left out on purpose: they drop nothing, so they can't be obtained
                         output.accept(ModBlocks.ICED_CRYSTAL_CLUSTER);
-                        output.accept(ModBlocks.BUDDING_ICED_CRYSTAL);
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS);
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_STAIRS);
                         output.accept(ModBlocks.ICED_CRYSTAL_BRICKS_SLAB);
@@ -77,10 +73,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CAT_TREE_2);
                         output.accept(ModBlocks.CAT_TREE_3);
                         output.accept(ModBlocks.CAT_TREE_4);
-
                     }).build());
-
-
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

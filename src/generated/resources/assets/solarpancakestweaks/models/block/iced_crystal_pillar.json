@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "solarpancakestweaks:block/iced_crystal_pillar_top",
+    "side": "solarpancakestweaks:block/iced_crystal_pillar_side"
+  }
+}

@@ -59,7 +59,6 @@ public class ShuffleShovelItem extends Item {
         BlockHitResult hitResult = new BlockHitResult(context.getClickLocation(), context.getClickedFace(),
                 context.getClickedPos(), context.isInside());
 
-
         Collections.shuffle(paletteSlots);
         for (int slot : paletteSlots) {
             ItemStack stack = player.getInventory().getItem(slot);
@@ -81,7 +80,6 @@ public class ShuffleShovelItem extends Item {
         }
         return slots;
     }
-
 
     private static void playPlaceSoundForPlayer(Player player, Level level, BlockPos pos) {
         if (player instanceof ServerPlayer serverPlayer) {

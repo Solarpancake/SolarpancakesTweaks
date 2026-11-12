@@ -29,8 +29,6 @@ public class ModEquipmentAssetProvider implements DataProvider {
                 .build());
     }
 
-
-
     @Override
     public CompletableFuture<?> run(CachedOutput cache) {
         Map<ResourceKey<EquipmentAsset>, EquipmentClientInfo> equipmentAssets = new HashMap<>();

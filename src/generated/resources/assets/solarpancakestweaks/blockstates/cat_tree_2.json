@@ -1,0 +1,430 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2"
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "elbow": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side"
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "none",
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side_alt"
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "none",
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side",
+        "y": 180
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "none",
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side_alt",
+        "y": 180
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "none",
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side",
+        "y": 90
+      },
+      "when": {
+        "axis": "y",
+        "east": "true",
+        "elbow": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side_alt",
+        "y": 90
+      },
+      "when": {
+        "axis": "z",
+        "east": "true",
+        "elbow": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side",
+        "y": 270
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "none",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side_alt",
+        "y": 270
+      },
+      "when": {
+        "axis": "z",
+        "elbow": "none",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side",
+        "x": 270
+      },
+      "when": {
+        "axis": "z",
+        "elbow": "none",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side_alt",
+        "x": 270
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "none",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "down": "true",
+        "elbow": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_side_alt",
+        "x": 90
+      },
+      "when": {
+        "axis": "x",
+        "down": "true",
+        "elbow": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "down": "true",
+        "elbow": "positive"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "y": 270
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "positive",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat",
+        "y": 270
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "positive",
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat"
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "positive",
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180,
+        "y": 270
+      },
+      "when": {
+        "axis": "x",
+        "down": "true",
+        "elbow": "negative"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "negative",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat",
+        "y": 180
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "negative",
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat",
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "elbow": "negative",
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "y": 180
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "positive",
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner"
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "positive",
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "y": 90
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "positive",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "y": 270
+      },
+      "when": {
+        "axis": "y",
+        "east": "true",
+        "elbow": "positive"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "negative",
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180,
+        "y": 180
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "negative",
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180,
+        "y": 270
+      },
+      "when": {
+        "axis": "y",
+        "elbow": "negative",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "axis": "y",
+        "east": "true",
+        "elbow": "negative"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180,
+        "y": 180
+      },
+      "when": {
+        "axis": "z",
+        "down": "true",
+        "elbow": "positive"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner"
+      },
+      "when": {
+        "axis": "z",
+        "elbow": "positive",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat",
+        "y": 90
+      },
+      "when": {
+        "axis": "z",
+        "elbow": "positive",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat"
+      },
+      "when": {
+        "axis": "z",
+        "east": "true",
+        "elbow": "positive"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "x": 180
+      },
+      "when": {
+        "axis": "z",
+        "down": "true",
+        "elbow": "negative"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner",
+        "y": 180
+      },
+      "when": {
+        "axis": "z",
+        "elbow": "negative",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat",
+        "y": 180
+      },
+      "when": {
+        "axis": "z",
+        "elbow": "negative",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "solarpancakestweaks:block/cat_tree_2_corner_flat",
+        "y": 270
+      },
+      "when": {
+        "axis": "z",
+        "east": "true",
+        "elbow": "negative"
+      }
+    }
+  ]
+}

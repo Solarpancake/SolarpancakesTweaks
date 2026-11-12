@@ -20,7 +20,6 @@ public class IcedCrystalLampBlock extends Block {
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-
         if (!level.isClientSide()) {
             level.setBlockAndUpdate(pos, state.cycle(CLICKED));
         }

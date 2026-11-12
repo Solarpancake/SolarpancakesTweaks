@@ -21,7 +21,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class IceDetectorItem extends Item {
-
     // 3x3 chunks = 48x48 blocks, so radius = 24 blocks from center
     private static final int CHUNK_SEARCH_RADIUS = 24;
 

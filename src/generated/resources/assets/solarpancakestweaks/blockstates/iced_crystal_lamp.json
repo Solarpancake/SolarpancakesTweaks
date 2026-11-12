@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "solarpancakestweaks:block/iced_crystal_lamp"
+    },
+    "clicked=true": {
+      "model": "solarpancakestweaks:block/iced_crystal_lamp_on"
+    }
+  }
+}

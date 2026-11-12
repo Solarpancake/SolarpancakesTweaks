@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_iced_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "solarpancakestweaks:iced_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "solarpancakestweaks:textures/gui/advancements/backgrounds/steel_grate.png",
+    "description": {
+      "translate": "advancements.solarpancakestweaks.root.description"
+    },
+    "icon": {
+      "id": "solarpancakestweaks:iced_crystal"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.solarpancakestweaks.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_iced_crystal"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

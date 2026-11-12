@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "iced_crystal",
+  "key": {
+    "A": "solarpancakestweaks:iced_crystal"
+  },
+  "pattern": [
+    "AAA",
+    "A A"
+  ],
+  "result": {
+    "id": "solarpancakestweaks:iced_crystal_helmet"
+  }
+}

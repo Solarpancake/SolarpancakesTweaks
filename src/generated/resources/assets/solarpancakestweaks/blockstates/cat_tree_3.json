@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "solarpancakestweaks:block/cat_tree_3",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "solarpancakestweaks:block/cat_tree_3"
+    },
+    "facing=south": {
+      "model": "solarpancakestweaks:block/cat_tree_3",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "solarpancakestweaks:block/cat_tree_3",
+      "y": 270
+    }
+  }
+}

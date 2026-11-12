@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "solarpancakestweaks:item/iced_crystal_hoe"
+  }
+}

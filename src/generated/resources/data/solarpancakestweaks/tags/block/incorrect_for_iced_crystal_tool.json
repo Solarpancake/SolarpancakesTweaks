@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#solarpancakestweaks:needs_iced_crystal_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ]
+}

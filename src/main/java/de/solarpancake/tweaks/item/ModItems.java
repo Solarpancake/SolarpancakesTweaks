@@ -3,8 +3,11 @@ package de.solarpancake.tweaks.item;
 import de.solarpancake.tweaks.Solarpancakestweaks;
 import de.solarpancake.tweaks.block.ModBlocks;
 import de.solarpancake.tweaks.food.ModFoods;
+import de.solarpancake.tweaks.item.custom.CalculatorItem;
+import de.solarpancake.tweaks.item.custom.DrinkCanItem;
 import de.solarpancake.tweaks.item.custom.IceDetectorItem;
 import de.solarpancake.tweaks.item.custom.MagnetItem;
+import de.solarpancake.tweaks.item.custom.MeasuringTapeItem;
 import de.solarpancake.tweaks.item.custom.ShuffleShovelItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -23,14 +26,12 @@ import static de.solarpancake.tweaks.block.ModBlocks.STEEL_GRATE;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Solarpancakestweaks.MODID);
 
-
     /*  SimpleItems  */
     public static final DeferredItem<Item> ICED_CRYSTAL = ITEMS.registerSimpleItem("iced_crystal");
     public static final DeferredItem<Item> CRUSHED_ICED_CRYSTAL = ITEMS.registerSimpleItem("crushed_iced_crystal");
     public static final DeferredItem<Item> GREEN_APPLE_SLICED = ITEMS.registerSimpleItem("green_apple_sliced");
     public static final DeferredItem<Item> EMPTY_CAN = ITEMS.registerSimpleItem("empty_can");
     public static final DeferredItem<Item> ICED_CRYSTAL_ROD = ITEMS.registerSimpleItem("iced_crystal_rod");
-
 
     /*  Items  */
     public static final DeferredItem<Item> GREEN_APPLE = ITEMS.registerItem("green_apple",
@@ -42,13 +43,13 @@ public class ModItems {
     public static final DeferredItem<Item> RASPBERRY = ITEMS.registerItem("raspberry",
             properties -> new BlockItem(ModBlocks.RASPBERRY_BUSH.get(), properties.food(ModFoods.RASPBERRY)));
     public static final DeferredItem<Item> ORIGINAL_CAN = ITEMS.registerItem("original_can",
-            properties -> new Item(properties.food(ModFoods.ORIGINAL_CAN, ModFoods.ORIGINAL_CAN_CONSUMABLE)));
+            properties -> new DrinkCanItem(properties.durability(DrinkCanItem.SIPS).food(ModFoods.ORIGINAL_CAN, ModFoods.ORIGINAL_CAN_CONSUMABLE)));
     public static final DeferredItem<Item> GREEN_APPLE_CAN = ITEMS.registerItem("green_apple_can",
-            properties -> new Item(properties.food(ModFoods.GREEN_APPLE_CAN, ModFoods.GREEN_APPLE_CAN_CONSUMABLE)));
+            properties -> new DrinkCanItem(properties.durability(DrinkCanItem.SIPS).food(ModFoods.GREEN_APPLE_CAN, ModFoods.GREEN_APPLE_CAN_CONSUMABLE)));
     public static final DeferredItem<Item> RASPBERRY_CAN = ITEMS.registerItem("raspberry_can",
-            properties -> new Item(properties.food(ModFoods.RASPBERRY_CAN, ModFoods.RASPBERRY_CAN_CONSUMABLE)));
+            properties -> new DrinkCanItem(properties.durability(DrinkCanItem.SIPS).food(ModFoods.RASPBERRY_CAN, ModFoods.RASPBERRY_CAN_CONSUMABLE)));
     public static final DeferredItem<Item> BLACK_CAN = ITEMS.registerItem("black_can",
-            properties -> new Item(properties.food(ModFoods.BLACK_CAN, ModFoods.BLACK_CAN_CONSUMABLE)));
+            properties -> new DrinkCanItem(properties.durability(DrinkCanItem.SIPS).food(ModFoods.BLACK_CAN, ModFoods.BLACK_CAN_CONSUMABLE)));
     public static final DeferredItem<Item> ICED_CRYSTAL_SWORD = ITEMS.registerItem("iced_crystal_sword",
             properties -> new Item(properties.sword(ModToolTiers.ICED_CRYSTAL, 3, -2.4f)));
     public static final DeferredItem<Item> ICED_CRYSTAL_PICKAXE = ITEMS.registerItem("iced_crystal_pickaxe",
@@ -76,7 +77,6 @@ public class ModItems {
     public static final DeferredItem<Item> DILL_SEEDS = ITEMS.registerItem("dill_seeds",
             properties -> new BlockItem(ModBlocks.DILL_CROP.get(), properties));
 
-
     /*  CustomItems  */
     public static final DeferredItem<Item> ICE_DETECTOR = ITEMS.registerItem("ice_detector",
             properties -> new IceDetectorItem(properties.durability(64)){
@@ -93,11 +93,13 @@ public class ModItems {
             properties -> new ShuffleShovelItem(properties.stacksTo(1)));
     public static final DeferredItem<Item> MAGNET = ITEMS.registerItem("magnet",
             properties -> new MagnetItem(properties.stacksTo(1)));
-
+    public static final DeferredItem<Item> MEASURING_TAPE = ITEMS.registerItem("measuring_tape",
+            properties -> new MeasuringTapeItem(properties.stacksTo(1)));
+    public static final DeferredItem<Item> CALCULATOR = ITEMS.registerItem("calculator",
+            properties -> new CalculatorItem(properties.stacksTo(1)));
 
     /* BlockItems */
     public static final DeferredItem<BlockItem> STEEL_GRATE = ITEMS.registerSimpleBlockItem(ModBlocks.STEEL_GRATE);
-
 
     /* helper methods */
 

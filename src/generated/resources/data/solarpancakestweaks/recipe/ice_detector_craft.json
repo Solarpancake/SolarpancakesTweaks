@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "iced_crystal",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "solarpancakestweaks:iced_crystal"
+  },
+  "pattern": [
+    "  B",
+    " A ",
+    "A  "
+  ],
+  "result": {
+    "id": "solarpancakestweaks:ice_detector"
+  }
+}

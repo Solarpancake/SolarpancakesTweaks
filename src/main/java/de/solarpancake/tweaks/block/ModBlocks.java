@@ -1,7 +1,6 @@
 package de.solarpancake.tweaks.block;
 
 import de.solarpancake.tweaks.Solarpancakestweaks;
-
 import de.solarpancake.tweaks.block.custom.*;
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.core.Direction;
@@ -20,7 +19,6 @@ import java.util.function.Function;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Solarpancakestweaks.MODID);
-
 
     /* Iced Crystal stuff */
 
@@ -96,14 +94,13 @@ public class ModBlocks {
                     .randomTicks()
                     .pushReaction(PushReaction.DESTROY)));
 
-
     /* crop related stuff */
 
     public static final DeferredBlock<Block> FLOWERING_LEMON_TREE_LEAVES = registerBlock("flowering_lemon_tree_leaves",
             properties -> new Block(properties
                     .strength(4f)));
 
-    public static final  DeferredBlock<Block> RASPBERRY_BUSH = BLOCKS.registerBlock("raspberry_bush",
+    public static final DeferredBlock<Block> RASPBERRY_BUSH = BLOCKS.registerBlock("raspberry_bush",
             properties -> new RaspberryBushBlock(properties
                     .randomTicks()
                     .sound(SoundType.SWEET_BERRY_BUSH)
@@ -117,9 +114,7 @@ public class ModBlocks {
                     .noCollision()
                     .pushReaction(PushReaction.DESTROY)));
 
-
     /* cat tree thingy related stuff */
-
 
     public static final DeferredBlock<Block> CAT_TREE_1 = registerBlock("cat_tree_1",
             properties -> new CatTreeBaseBlock(properties
@@ -127,20 +122,17 @@ public class ModBlocks {
                     .noOcclusion()
                     .requiresCorrectToolForDrops()));
 
-
     public static final DeferredBlock<Block> CAT_TREE_2 = registerBlock("cat_tree_2",
             properties -> new CatTreePipeBlock(properties
                     .strength(2f)
                     .noOcclusion()
                     .requiresCorrectToolForDrops()));
 
-
     public static final DeferredBlock<Block> CAT_TREE_3 = registerBlock("cat_tree_3",
             properties -> new CatTreePostBlock(properties
                     .strength(2f)
                     .noOcclusion()
                     .requiresCorrectToolForDrops(), Direction.UP, Direction.DOWN));
-
 
     public static final DeferredBlock<Block> CAT_TREE_4 = registerBlock("cat_tree_4",
             properties -> new CatTreePostBlock(properties
@@ -153,15 +145,12 @@ public class ModBlocks {
                     .strength(2f)
                     .requiresCorrectToolForDrops()));
 
-
     /* other stuff */
 
     public static final DeferredBlock<Block> STEEL_GRATE = BLOCKS.registerBlock("steel_grate",
             properties -> new TransparentBlock(properties
                     .strength(2f)
                     .requiresCorrectToolForDrops()));
-
-
 
     /* helper methods */
 

@@ -13,7 +13,6 @@ public class ModVillagerTradeTags extends VillagerTradesTagsProvider {
         super(output, lookupProvider);
     }
 
-
     @Override
     protected void addTags(HolderLookup.Provider registries) {
         getOrCreateRawBuilder(VillagerTradeTags.FARMER_LEVEL_1)

@@ -10,11 +10,9 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SingleItemRecipeBuilder;
-import net.minecraft.references.ItemIds;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,7 +22,6 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     public static class Runner extends RecipeProvider.Runner {
-
         public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
             super(packOutput, registries);
         }
@@ -41,8 +38,6 @@ public class ModRecipeProvider extends RecipeProvider {
     }
     @Override
     protected void buildRecipes() {
-
-
         /* shaped recipe */
 
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BLOCK.get())
@@ -173,7 +168,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("iced_crystal")
                 .save(output, "solarpancakestweaks:iced_crystal_spear_from_iced_crystal");
 
-
         /* shapeless */
 
         shapeless(RecipeCategory.FOOD, ModItems.GREEN_APPLE.get())
@@ -182,13 +176,11 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(Items.APPLE), has(Items.APPLE))
                 .save(output, "solarpancakestweaks:green_apple_from_apple");
 
-        
         /* blender (empty can + crushed iced crystal are always required, the ingredient is the fruit) */
 
         blending(ModItems.RASPBERRY.get(), ModItems.RASPBERRY_CAN.get());
         blending(ModItems.GREEN_APPLE.get(), ModItems.GREEN_APPLE_CAN.get());
         blending(ModItems.LEMON.get(), ModItems.ORIGINAL_CAN.get());
-
 
         /* special/custom */
 
@@ -198,8 +190,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(output);
 
         slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICED_CRYSTAL_BRICKS_SLAB.get(), ModBlocks.ICED_CRYSTAL_BRICKS.get());
-
-
     }
 
     private void blending(ItemLike fruit, ItemLike result) {

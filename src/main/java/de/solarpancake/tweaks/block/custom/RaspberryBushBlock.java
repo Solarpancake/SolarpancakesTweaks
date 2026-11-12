@@ -2,7 +2,6 @@ package de.solarpancake.tweaks.block.custom;
 
 import de.solarpancake.tweaks.item.ModItems;
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -26,7 +25,6 @@ public class RaspberryBushBlock extends SweetBerryBushBlock {
         return new ItemStack(ModItems.RASPBERRY.get());
     }
 
-
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
         int age = state.getValue(AGE);
@@ -40,10 +38,8 @@ public class RaspberryBushBlock extends SweetBerryBushBlock {
             level.setBlock(pos, newState, 2);
             level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, newState));
             return InteractionResult.SUCCESS;
-
         } else {
             return super.useWithoutItem(state, level, pos, player, hitResult);
         }
     }
 }
-
